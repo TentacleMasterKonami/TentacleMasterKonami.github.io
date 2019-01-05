@@ -1,0 +1,918 @@
+<html>
+<head>
+<title>
+Reincarnation CYOA
+</title>
+<link rel="stylesheet" type="text/css" href="Reincarnation.css">
+</head>
+<script src="Reincarnation.js"></script>
+<body>
+<div id="demo" class="fixed">
+0 points
+</div>
+<center>
+<b><h1>Reincarnation CYOA</h1><br>by Leander<br></b>
+You can find the Original CYOA on imgur <a href="https://imgur.com/account/favorites/APFP1">here</a>
+<p>Congratulations, you did it, you won the death lottery! Rather then having a body and a world 
+assigned to you and having your memories wiped like most people who die you get to chose where and 
+what you reincarnate as, isn't it exciting?</p>
+<p>What you've never heard of this? Well it is a very low chance after all, and totaly not a way 
+for me to cover up the fact I ran you over at 3am while on a drunken bende on earth, and now have to 
+do this for you or get fired. Trust me, it's not easy to find a job as an angel nowadays so I need 
+to keep what I have.</p>
+<p>Anyway, try not to think about it too much and fill the forn in. Let me know when you're done 
+and I'll send you off on your new life! Oh and one more thing, you have to reincarnate as a girl, 
+as for why...Dont ask me, I don't make the rules.</p>
+<p>Equipment - pick one<br>
+Might as well get this out of the way first, it's exactly what it sounds like.<br>
+<button style="border: outset;" id="Vagina" onclick="Click(0, 'Vagina', ['DickAndVagina','Dick'], 2)">
+<img src="Pictures/Vagina.JPG" width="200"><br>
+A vagina<br>
+Exactly what it sounds like, normal female equipement. 
+Not much else to say but have fun and be 
+responsible with what you put in there.
+</button>
+<button style="border: outset;" id="DickAndVagina" onclick="Click(0, 'DickAndVagina', ['Vagina','Dick'], 2)">
+<img src="Pictures/DickAndVagina.JPG" width="200"><br>
+A dick and a vagina<br>
+Two for the price of one! Get the best of both worlds although 
+it'll exclude you from wearing tight leg wear, unles you want the attention of course. 
+Chose the size of your dick and if you have external balls or not.
+</button>
+<button style="border:outset;" id="Dick" onclick="Click(0, 'Dick', ['DickAndVagina','Vagina'], 2)">
+<img src="Pictures/Dick.JPG" width="200"><br>
+A dick<br>
+Although this would technicaly make you not a female, it can still be done. It is a bit sad that 
+you don't want to experience sex from the other side though... 
+ Choose the size of your dick and 
+if you have external balls or not.
+</button>
+</p>
+<p>Body type - pick one<br>
+Please choose carefuly! It'll be possible to change from one to the other trough hard work but change back 
+to your regular lifestyle and you'll drift back to your choice here.<br>
+<button style="border: outset;" id="Muscular" onclick="Click(0, 'Muscular', ['Fit','Skinny','Average','Curvy','ExtraThick','Plump'], 6)">
+<img src="Pictures/Muscular.PNG" width="200"><br>
+Muscular<br>
+You'll be incredably physicaly fit and gain muscle easily. No one will dare to mess with you 
+like this and you'll be amazing at contact sports.
+</button>
+<button style="border: outset;" id="Fit" onclick="Click(0, 'Fit', ['Muscular','Skinny','Average','Curvy','ExtraThick','Plump'], 6)">
+<img src="Pictures/Fit.JPG" width="200"><br>
+Fit<br>
+A toned physique with hint of muscle definition and a nice tight ass. 
+You'll be a natural runner like 
+this and be good at most sports that require speed over strenght. 
+ Losing any weight you might gain 
+will be a breeze.
+</button>
+<button style="border: outset;" id="Skinny" onclick="Click(0, 'Skinny', ['Fit','Muscular','Average','Curvy','ExtraThick','Plump'], 6)">
+<img src="Pictures/Skinny.PNG" width="200"><br>
+Skinny<br>
+You'll be thin without much in the way of hips, butt or a feminine figure at all. 
+Losing weight is extremely easy and unless you eat a lot of food you won't gain anything. 
+You'll be fairly weak. Unless you take the boons to incrase your athletic ability,
+easily overpowered by even average females let alone males, pick with caution unless you like 
+ that kinda thing.
+</button>
+<button style="border: outset;" id="Average" onclick="Click(0, 'Average', ['Fit','Skinny','Muscular','Curvy','ExtraThick','Plump'], 6)">
+<img src="Pictures/Average.PNG" width="200"><br>
+Average<br>
+A perfectly average female body, you wont gain much weight but you won't lose it either. 
+Appeal for everyone with hips that stick out a little bit and a nice sized ass.
+</button>
+</p>
+<p>
+<button style="border: outset;" id="Curvy" onclick="Click(0, 'Curvy', ['Fit','Skinny','Average','Muscular','ExtraThick','Plump'], 6)">
+<img src="Pictures/Curvy.PNG" width="200"><br>
+Curvy<br>
+A thick physique wih wide hips, an hourglass figure, a big ass and juicy thighs. You wouldn't be described as fat however, 
+it's all in all the right places. Although you can gain weight fairly easily it'll just go to your assets rather then your 
+stomach, and losing it to get back to your regular curvy figure will be a challenge but not impossible. Appeals to a lot of people.
+</button>
+<button style="border: outset;" id="ExtraThick" onclick="Click(0, 'ExtraThick', ['Fit','Skinny','Average','Curvy','Muscular','Plump'], 6)">
+<img src="Pictures/ExtraThick.PNG" width="200"><br>
+Extra Thick<br>
+The more extreme end of curvy, a huge ass and very wide hips that sway with every step with a ridiculously over the top hourglass
+ figure. You can gain weight easily but it'll go the the right places and it'll be a challenge to get your weight back down.
+</button>
+<button style="border: outset;" id="Plump" onclick="Click(0, 'Plump', ['Fit','Skinny','Average','Curvy','ExtraThick','Muscular'], 6)">
+<img src="Pictures/Plump.PNG" width="200"><br>
+Plump<br>
+You'll have a full and huggable figure, however gaining weight will be extremely easy and loosing it again will be incredibly hard.
+</button>
+</p>
+<p>Breasts - pick one<br>
+One of the highlights of being famale, please choose carefuly!<br>
+<button style="border: outset;" id="Flat" onclick="Click(0, 'Flat', ['Small','AverageB','Big','Huge'], 4)">
+<img src="Pictures/Flat.PNG" width="200"><br>
+Flat<br>
+Are you sure? You'll have nothing to show off! I mean it does help with the cute factor if that's what you're going for and it does 
+attract a certain type of person.
+</button>
+<button style="border: outset;" id="Small" onclick="Click(0, 'Small', ['Flat','AverageB','Big','Huge'], 4)">
+<img src="Pictures/Small.JPG" width="200"><br>
+Small<br>
+Good for playing sports while still having a bust but you won't be using them to seduce anyone, unless they like small
+ chests that is.
+</button>
+<button style="border: outset;" id="AverageB" onclick="Click(0, 'AverageB', ['Small','Flat','Big','Huge'], 4)">
+<img src="Pictures/AverageB.PNG" width="200"><br>
+Average<br>
+To many people this is just right. Nice, warm and soft but won't stand out or draw much attention unless you wear revealing clothes.
+</button>
+<button style="border: outset;" id="Big" onclick="Click(0, 'Big', ['Small','AverageB','Flat','Huge'], 4)">
+<img src="Pictures/Big.PNG" width="200"><br>
+Big<br>
+Nice and big, expect looks of envy or lust wherever you go unless you wear very thick clothes to hide them. If you want to 
+move particularly fast or tackle stairs you'll need some very sturdy bras. If you lactate you'll be able to drink from the 
+source with a bit of effort.
+</button>
+<button style="border: outset;" id="Huge" onclick="Click(0, 'Huge', ['Small','AverageB','Big','Flat'], 4)">
+<img src="Pictures/Huge.PNG" width="200"><br>
+Huge<br>
+Not for the faint of heart, are you sure? You'll be unable to hide these under even the thickest winter coat and eyes 
+will follow you everywhere. Don't worry about back pain or sagging though, my magic keeps that all in check. If you lactate 
+you'll be able to drink straight from the source and you will snap cheaper bras on a regular basis.
+</button>
+</p>
+<p>Height - pick one<br>
+<button style="border: outset;" id="Tiny" onclick="Click(0, 'Tiny', ['Short','AverageH','Tall','HugeH'], 4)">
+<img src="Pictures/Tiny.PNG" width="200"><br>
+Tiny<br>
+You're far, far shorter then even the typical short girl. Can work if you're going for a certain look but most people will only 
+ever think of you as cute rather then sexy.
+</button>
+<button style="border: outset;" id="Short" onclick="Click(0, 'Short', ['Tiny','AverageH','Tall','HugeH'], 4)">
+<img src="Pictures/Short.JPG" width="200"><br>
+Short<br>
+You'll still be shorter then average but still tall enough for most people to belive you are the age you claim to be. Expect to be 
+looking up to most people and to need help getting things from high shelves. The generally accepted ideal heingt for short girls.
+</button>
+<button style="border: outset;" id="AverageH" onclick="Click(0, 'AverageH', ['Short','Tiny','Tall','HugeH'], 4)">
+<img src="Pictures/AverageH.PNG" width="200"><br>
+Average<br>
+Average heingt for a girl, you'll be a bit shorter then most guys. Multipurpose, fits all the other body choices well.
+</button>
+<button style="border: outset;" id="Tall" onclick="Click(0, 'Tall', ['Short','AverageH','Tiny','HugeH'], 4)">
+<img src="Pictures/Tall.PNG" width="200"><br>
+Tall<br>
+You'll stand taller then almost all the girls you meet and be just a bit taller then the average male height, 
+good if you plan on doing any sports in your new life and lots of people like taller girls. You'll have an aura of 
+maturity because of your height and people will respect you more then if you were short.
+</button>
+<button style="border: outset;" id="HugeH" onclick="Click(0, 'HugeH', ['Short','AverageH','Tall','Tiny'], 4)">
+<img src="Pictures/HugeH.JPG" width="200"><br>
+Huge<br>
+You'll tower over the average girl and all but the tallest guys, expect to look down on pretty much 
+everyone you meet and be asked to pass things from high places a lot.
+</button>
+</p>
+<p>Species<br>
+Depending on your choice you may automaticaly gain a pery, a bane and a number of free points to spend. If you are 
+given a lower level boon or bane you can upgrade it to gain as many points as you usualy would gain/lose by taking them.<br>
+<button style="border: outset;" id="Human" onclick="Click(2, 'Human', ['Succubus','Kitsune','Catgirl','DogGirl','Lamia','Harpy','Cowgirl','SlimeGirl','Centaur','Angel','Fairy','Mermaid','PlantGirl','CYO'], 14)">
+<img src="Pictures/Human.PNG" width="200"><br>
+Human +2 points<br>
+What it sounds like, regular old human.
+</button>
+<button style="border: outset;" id="Succubus" onclick="Click(3, 'Succubus', ['Human','Kitsune','Catgirl','DogGirl','Lamia','Harpy','Cowgirl','SlimeGirl','Centaur','Angel','Fairy','Mermaid','PlantGirl','CYO','LustAura','SexAddict'], 16)">
+<img src="Pictures/Succubus.PNG" width="200"><br>
+Succubus +3 points<br>Lust aura, sex addict.<br>
+A sexy lust demon, you can hide your demonic attributes at any point. I'm not supposed to allow you to chose this one, 
+being an angel and all, but if succubus are as fun to be as they are to have in bed I just couldn't let you not have this option.
+</button>
+<button style="border: outset;" id="Kitsune" onclick="Click(3, 'Kitsune', ['Succubus','Human','Catgirl','DogGirl','Lamia','Harpy','Cowgirl','SlimeGirl','Centaur','Angel','Fairy','Mermaid','PlantGirl','CYO','SmoothTalker','LiquidLunch'], 16)">
+<img src="Pictures/Kitsune.JPG" width="200"><br>
+Kitsune +3 points<br>Smooth talker, liquid lunch.<br>
+Another sex demon and just as good in bed as a succubus, don't tell anyone I said that. Can have multiple long fluffy 
+tails which are incredibly soft. Goon luck looking after all that fur if you chose to have a lot of tails and dont have 
+the good hair day boon though.
+</button>
+<button style="border: outset;" id="Catgirl" onclick="Click(2, 'Catgirl', ['Succubus','Kitsune','Human','DogGirl','Lamia','Harpy','Cowgirl','SlimeGirl','Centaur','Angel','Fairy','Mermaid','PlantGirl','CYO','Flexible','Heat'], 16)">
+<img src="Pictures/Catgirl.JPG" width="200"><br>
+Catgirl +2 points<br>Flexible, heat.<br>
+Catgirls are super cute, good for hugs and in bed with their catlike flexibility.
+</button>
+<button style="border: outset;" id="DogGirl" onclick="Click(2, 'DogGirl', ['Succubus','Kitsune','Catgirl','Human','Lamia','Harpy','Cowgirl','SlimeGirl','Centaur','Angel','Fairy','Mermaid','PlantGirl','CYO','Lubrication','Colorblind'], 16)">
+<img src="Pictures/DogGirl.PNG" width="200"><br>
+Dog Girl +2 points<br>Lubrication, colourblind.<br>
+Just as cute as catgirls, they have a huge veriety of looks depending on there breed and are very loyal to there partners).
+</button>
+<button style="border: outset;" id="Lamia" onclick="Click(2, 'Lamia', ['Succubus','Kitsune','Catgirl','DogGirl','Human','Harpy','Cowgirl','SlimeGirl','Centaur','Angel','Fairy','Mermaid','PlantGirl','CYO','Oviposition','SuperFertile'], 16)">
+<img src="Pictures/Lamia.PNG" width="200"><br>
+Lamia +2 points<br>Oviposition, super fertile.<br>
+Girls with a long scaly snake tail and they come in a veriety of colors and patterns, voted most likely to give 
+full body hugs in winter.
+</button>
+<button style="border: outset;" id="Harpy" onclick="Click(2, 'Harpy', ['Succubus','Kitsune','Catgirl','DogGirl','Lamia','Human','Cowgirl','SlimeGirl','Centaur','Angel','Fairy','Mermaid','PlantGirl','CYO','Flight','ToxicWaste'], 16)">
+<img src="Pictures/Harpy.JPG" width="200"><br>
+Harpy +2 points<br>Flight, toxic waste.<br>
+Girls with wings in place of arms, some may have a feathered tail and feathers in other places too but this is the 
+basic trait shared by them all. As you can imagine not having arms makes even simple cooking completely beyond them. 
+They usualy look younger then they actualy are with thin bodies but in this case your species has no bearing on your body type.
+</button>
+<button style="border: outset;" id="Cowgirl" onclick="Click(2, 'Cowgirl', ['Succubus','Kitsune','Catgirl','DogGirl','Lamia','Harpy','Human','SlimeGirl','Centaur','Angel','Fairy','Mermaid','PlantGirl','CYO','EasyPregnancy','MilkFountain'], 16)">
+<img src="Pictures/Cowgirl.PNG" width="200"><br>
+Cowgirl +2 points<br> Easy pregnancy, milk fountain.<br>
+Typicaly with huge breasts and a plump figure, but in this case your species has no bearing on your body type.
+</button>
+<button style="border: outset;" id="SlimeGirl" onclick="Click(2, 'SlimeGirl', ['Succubus','Kitsune','Catgirl','DogGirl','Lamia','Harpy','Cowgirl','Human','Centaur','Angel','Fairy','Mermaid','PlantGirl','CYO','Stretchy','FullBodyStimulation'], 16)">
+<img src="Pictures/SlimeGirl.PNG" width="200"><br>
+Slime girl +2 points<br>Stretchy, full body stimulation.<br>
+These are extra fun! Slime girls entire bodies are made of slime(obviously) and they are very sensitive. Just try poking 
+your finger into one's arm and watch them squirm from the pleasure.
+</button>
+<button style="border: outset;" id="Centaur" onclick="Click(2, 'Centaur', ['Succubus','Kitsune','Catgirl','DogGirl','Lamia','Harpy','Cowgirl','SlimeGirl','Human','Angel','Fairy','Mermaid','PlantGirl','CYO','Athletic','Messy'], 16)">
+<img src="Pictures/Centaur.PNG" width="200"><br>
+Centaur +2 points<br>Athletic, Messy.<br>
+Centaurs have a horse body from the weist down and the genetals to match, if you have a dick I recomend making sure the one 
+reciving it is nice and stretched out before you start. They are very fast runners thanks to their horse lower half.
+</button>
+<button style="border: outset;" id="Angel" onclick="Click(1, 'Angel', ['Succubus','Kitsune','Catgirl','DogGirl','Lamia','Harpy','Cowgirl','SlimeGirl','Centaur','Human','Fairy','Mermaid','PlantGirl','CYO','WWTLF','DivineJudgment'], 16)">
+<img src="Pictures/Angel.PNG" width="200"><br>
+Angel +1 points<br>
+Who wants to live forever? Divine judgment.  I really can't recomend it, being one myself and all the other options sound 
+more interesting. But then again it is your choice after all, at least your wings are nice and sensitive, so if you get 
+someone who knows how to give a good massage you'll have the time of your live. Bear in mind you will have wings but you won't 
+be able to fly unless you have the the perk. You can hide your halo at will.
+</button>
+<button style="border: outset;" id="Fairy" onclick="Click(2, 'Fairy', ['Succubus','Kitsune','Catgirl','DogGirl','Lamia','Harpy','Cowgirl','SlimeGirl','Centaur','Angel','Human','Mermaid','PlantGirl','CYO','Apprentice','Quiet'], 16)">
+<img src="Pictures/Fairy.PNG" width="200"><br>
+Fairy +2 points<br>Apprentice, quiet.<br>
+Fairies are far smaller then regular humns, some have colorful butterfly wings while some don't. Other then being at 
+maximum 30cm high they are still proportioned correctly so will work with any body type.
+</button>
+<button style="border: outset;" id="Mermaid" onclick="Click(2, 'Mermaid', ['Succubus','Kitsune','Catgirl','DogGirl','Lamia','Harpy','Cowgirl','SlimeGirl','Centaur','Angel','Fairy','Human','PlantGirl','CYO','WaterBreathing','Gullible'], 16)">
+<img src="Pictures/Mermaid.PNG" width="200"><br>
+Mermaid +2 points<br>Water breathing, gulible.<br>
+Mermaids can swim trough the water at incredible speeds but will need either magic or assistance to move around on land. 
+Being a solitary species mainly, they are poor when it comes to social cues and can be a little too trusting.
+</button>
+<button style="border: outset;" id="PlantGirl" onclick="Click(2, 'PlantGirl', ['Succubus','Kitsune','Catgirl','DogGirl','Lamia','Harpy','Cowgirl','SlimeGirl','Centaur','Angel','Fairy','Mermaid','Human','CYO','Tentacles','SuperFertile'], 16)">
+<img src="Pictures/PlantGirl.PNG" width="200"><br>
+Palnt girl +2 points<br>Tentacles, super fertile.<br>
+As plant girls tend to live in isolated areas of the forest, they are incredibly fertile so if they do come across someone they 
+can get pregnant easaly and have children. Although they have a human looking body and can walk around, this is deceptive as most 
+of them lies in an immobile giant flower. Plant girls living in civilisation have had there flowers moved, usualy into big plant 
+pots so it isn't too far away, as without it they would wither away after a while. They need to spend at least an hour a day 
+inside the flower tp recharge their energy.
+</button>
+<button style="border: outset;" id="CYO" onclick="Click(1, 'CYO', ['Succubus','Kitsune','Catgirl','DogGirl','Lamia','Harpy','Cowgirl','SlimeGirl','Centaur','Angel','Fairy','Mermaid','PlantGirl','Human'], 14)">
+<img src="Pictures/CYO.PNG" width="200"><br>
+Choose your own! +1 points<br>
+Choose your own speties not on this list.
+<br>(ps put it here <input name="name" id="TextBox" type="text" value=""></input>)
+</button>
+</p>
+<p>Reception<br>
+Chose how you are received, this will affect how others see you although you can change your own perception of your
+new body as well. Thsi only really means anything if you decide to stay in your current world although complete overwrite will still
+change your memories and personality if you go to a different world.<br>
+<button style="border: outset;" id="CO" onclick="Click(0, 'CO', ['CN','Accepting','OITR'], 3)">
+<img src="Pictures/CO.PNG" width="200"><br>
+Complete overwrite<br>
+You and everyone else will belive you were always a girl, you'll be a completely different person based on the 
+memories of your life as a girl. 
+</button>
+<button style="border: outset;" id="CN" onclick="Click(0, 'CN', ['CO','Accepting','OITR'], 3)">
+<img src="Pictures/CN.PNG" width="200"><br>
+Completely normal?<br>
+Only you will remember your life as a guy, everyone else will only ever remember you as a girl and their memories of you as a girl 
+will be changed to match your personality once you become a girl, so you dont have to wory about acting for the rest of your life. 
+It might take a while to get used to but i'm sure you'll do just fine! You also gain the memories of your girl life, so you will know 
+how to act, put on a bra, ect. but your personality is still completely your own and any changes to it will be your choice.
+</button>
+<button style="border: outset;" id="Accepting" onclick="Click(0, 'Accepting', ['CN','CO','OITR'], 3)">
+<img src="Pictures/Accepting.PNG" width="200"><br>
+Accepting<br>
+Everyone will remember you as a guy but with a bit of my magic, they will all accept your change and support you in your
+new life. Some might ba a little too supportive though.
+</button>
+<button style="border: outset;" id="OITR" onclick="Click(0, 'OITR', ['CN','Accepting','CO'], 3)">
+<img src="Pictures/OITR.PNG" width="200"><br>
+Out in the rain<br>
+No one will recognise you in your new body and it will take a lot of convincing to make them belive you. 
+For the most part this means people will think you are dead or missing until you prove otherwise. Useful if you want a new start.
+</button>
+</p>
+<p>Boons and banes<br>Boons are advantages and useful skills you can use in your new life, each will cost a number of points and if you want more 
+you'll have to take some banes to pay for them. Sorry, I'm not powerful enough to give you everything you want with no drawbacks!<br>
+<button style="border: outset;" id="Intelligent" onclick="Click(-1, 'Intelligent', [], )">
+<img src="Pictures/Intelligent.JPG" width="200"><br>
+Intelligent - 1 point<br>
+You're more intelligent than the average person and will easily get passing grades if you put zero effort in and will 
+get top of the class if you try your best. This does not give you an instant huge bank of information but will make 
+learning and retaining information a lot easier.
+</button>
+<button style="border: outset;" id="RazorSharp" onclick="Click(-2, 'RazorSharp', [], )">
+<img src="Pictures/RazorSharp.PNG" width="200"><br>
+Razor sharp - 2 points<br>
+You gain perfect recall and very high intelligence, all you need to do is read something once to remember it forever. 
+Learning languages and doing advanced courses in the sciences will be easy for you and you will get top grades with little effort. 
+Be warned this doesn't give you knowledge of everything so you'll need to have read or heard something at least once to remember it.
+</button>
+<button style="border: outset;" id="Athletic" onclick="Click(-1, 'Athletic', [], )">
+<img src="Pictures/Athletic.JPG" width="200"><br>
+Athletic - 1 point<br>
+You'll be very good at any sport you try your hand at. Sports teams will scout you out and you'll easily be able to get athletic scholarships.
+</button>
+<button style="border: outset;" id="RecordBreaking" onclick="Click(-2, 'RecordBreaking', [], )">
+<img src="Pictures/RecordBreaking.PNG" width="200"><br>
+Record breaking - 2 points<br>
+Your skill in all sports is near superhuman, expect to gain and hold many world records over your life if you chose this boon.
+</button>
+<button style="border: outset;" id="BeautifulVoice" onclick="Click(-1, 'BeautifulVoice', [], )">
+<img src="Pictures/BeautifulVoice.PNG" width="200"><br>
+Beautiful voice - 1 point<br>
+You have an incredible singing voice, expect to be very popular in local bars 
+on karaoke night and who knows, you might even get your big break one day.
+</button>
+<button style="border: outset;" id="SmoothTalker" onclick="Click(-1, 'SmoothTalker', [], )">
+<img src="Pictures/SmoothTalker.PNG" width="200"><br>
+Smooth talker - 1 point<br>
+You have a natural charm and can convince people to do things for you as long as it isn't something they would normaly never do.
+You can also talk your way out of a lot of situations.
+</button>
+<button style="border: outset;" id="Money" onclick="Click(-1, 'Money', [], )">
+<img src="Pictures/Money.PNG" width="200"><br>
+Here comes the money - 1 point<br>
+You will have money equal to the average earnings in your country deposited in your bank account every month. Don't expect to live like a 
+queen but you'll have a decent flat, be able to eat and have money to spend on intemet access with a small amount spare. Alternatively can 
+be taken to gain an instant £250,000 but you can only pick one of these two options. No one will question where the money comes from. 
+</button>
+<button style="border: outset;" id="Loaded" onclick="Click(-2, 'Loaded', [], )">
+<img src="Pictures/Loaded.PNG" width="200"><br>
+Loaded - 2 points<br>
+You will have money equal to the average earnings of people in top end white collar jobs deposited in your bank account each month. You can 
+afford to buy a nice big house out in the suburbs and eat really nice food at restaurants regularly. This will give you a comfortable 
+lifestyle and easily pay for it. You can also take this to instantly gain £1,000,000 but you can only pick one of these two options. 
+No one will question where the money comes from. 
+</button>
+<button style="border: outset;" id="SoMuchMoney" onclick="Click(-3, 'SoMuchMoney', [], )">
+<img src="Pictures/SoMuchMoney.JPG" width="200"><br>
+So much money, so little time - 3 points<br>
+You will have the kind of money usually reserved for CEOs and movie stars deposited in your bank every month. You will be able to 
+afford a huge mansion and live a life of luxury. You can also take this to instantly gain E50,000,000 but you can only pick one 
+of these two options. No one will question where the money comes from. 
+</button>
+<button style="border: outset;" id="Flight" onclick="Click(-1, 'Flight', [], )">
+<img src="Pictures/Flight.JPG" width="200"><br>
+Flight - 1 point<br>
+Whether it's maginc or wings, you gain the ability to fly.
+</button>
+<button style="border: outset;" id="WaterBreathing" onclick="Click(-1, 'WaterBreathing', [], )">
+<img src="Pictures/WaterBreathing.JPG" width="200"><br>
+Water breathing - 1 point<br>
+You can breathe underwater as easily as you can out of it.
+</button>
+<button style="border: outset;" id="MasterChef" onclick="Click(-1, 'MasterChef', [], )">
+<img src="Pictures/MasterChef.JPG" width="200"><br>
+Master chef - 1 point<br>
+You're an amazing cook and anything you make will always turn out incredible, even if you've never done the recipe before. 
+Finding work as a chef will be fairly easy and if you get some qualifications you could even end up working as head chef 
+in some very expensive restaurants one day. 
+</button>
+<button style="border: outset;" id="Lucky" onclick="Click(-1, 'Lucky', [], )">
+<img src="Pictures/Lucky.PNG" width="200"><br>
+Lucky - 1 point<br>
+You have been blessed with good luck. You won't always win it big in Vegas but you will avoid losing money unless you 
+actively try to. Expect to find an awful lot more money on the ground in the future and barely scrape through on exams 
+where you should have failed.
+</button>
+<button style="border: outset;" id="AngelicBlessing" onclick="Click(-2, 'AngelicBlessing', [], )">
+<img src="Pictures/AngelicBlessing.JPG" width="200"><br>
+Angelic blessing - 2 point<br>
+You will have the devil's own luck. You'll be able to guess your way through and ace the hardest exam, although this 
+doesn't actually make you intelligent and people may pick up on your exam results just being a fluke eventually. 
+You'll win lots of money in casinos, clouds will part on the rainiest days if you go outside etc. 
+</button>
+<button style="border: outset;" id="EasyBeauty" onclick="Click(-1, 'EasyBeauty', [], )">
+<img src="Pictures/EasyBeauty.PNG" width="200"><br>
+Easy beauty - 1 point<br>
+It's not easy looking like this. well at least it isn't for other people. You'll never need to wear makeup to look 
+your best and will wake up looking perfect. Your skin is also perfectly smooth and supple at all times. Should you 
+want to wear makeup you-II also be an expert at applying It.
+</button>
+<button style="border: outset;" id="GoodHairDay" onclick="Click(-1, 'GoodHairDay', [], )">
+<img src="Pictures/GoodHairDay.PNG" width="200"><br>
+Good hair day - 1 point<br>
+Your hair will always look perfect with little effort besides a wash every so often and a brush. 
+You can also change the colour of your hair and its length once per day. 
+</button>
+<button style="border: outset;" id="PerfectStyle" onclick="Click(-1, 'PerfectStyle', [], )">
+<img src="Pictures/PerfectStyle.PNG" width="200"><br>
+Perfect style - 1 point<br>
+You gain amazing fashion sense. you'll always know the perfect outfit for any situation 
+</button>
+<button style="border: outset;" id="Apprentice" onclick="Click(-1, 'Apprentice', [], )">
+<img src="Pictures/Apprentice.PNG" width="200"><br>
+Apprentice - 1 point<br>
+You gain a soulbound book full of simple and fairly weak magic spells, learning and using them will come naturally to you. 
+Also, you can learn more powerful magic than this book contains easier it you bye in a world where magic is practiced. 
+</button>
+<button style="border: outset;" id="HaremMaster" onclick="Click(-1, 'HaremMaster', [], )">
+<img src="Pictures/HaremMaster.PNG" width="200"><br>
+Harem master - 1 point<br>
+Any partners you might have are totally cool with you having other partners and might even encourage it. It you don't have 
+this boon you can still have a harem, it'll just be more effort. 
+</button>
+<button style="border: outset;" id="Delicious" onclick="Click(-1, 'Delicious', [], )">
+<img src="Pictures/Delicious.PNG" width="200"><br>
+Delicious! - 1 point<br>
+Any sperm you make or swallow will always taste amazing. Useful if you plan on sucking a lot of dick in the future. 
+</button>
+<button style="border: outset;" id="SkilledMouth" onclick="Click(-1, 'SkilledMouth', [], )">
+<img src="Pictures/SkilledMouth.PNG" width="200"><br>
+Skilled mouth - 1 point<br>
+You become the undisputed world champion of sucking dick and/or licking pussy, you know all the right places and just 
+how to give the person on the receiving end the time of their.
+</button>
+<button style="border: outset;" id="SkilledBody" onclick="Click(-1, 'SkilledBody', [], )">
+<img src="Pictures/SkilledBody.PNG" width="200"><br>
+Skilled body - 1 point<br>
+You become absolutely amazing at sex, able to give the other person the best sex they've ever had. Take with skilled mouth for even more fun. 
+</button>
+<button style="border: outset;" id="AddictiveCum" onclick="Click(-1, 'AddictiveCum', [], )">
+<img src="Pictures/AddictiveCum.PNG" width="200"><br>
+Addictive cum - 1 point<br>
+Your sexual juices are laced with a mild addictive. Although at first it won't cause people to become completely obsessed with you, 
+expect to have people coming back for more and more until they are hopelessly addicted.
+</button>
+<button style="border: outset;" id="Aphrodisiac" onclick="Click(-1, 'Aphrodisiac', [], )">
+<img src="Pictures/Aphrodisiac.PNG" width="200"><br>
+Perfect style - 1 point<br>
+Your sexual fluids are laced with a potent aphrodisiac. Partners will come close to passing out from the pleasure. 
+They'll always be up for another round and their orgasms will be ridiculously powerful. With enough doses their entire body 
+will become an erogenous zone that slowly wears off after a few days of no exposure to your sexual fluids. 
+</button>
+<button style="border: outset;" id="Lactation" onclick="Click(0-1, 'Lactation', [], )">
+<img src="Pictures/Lactation.PNG" width="200"><br>
+Lactation - 1 point<br>
+You produce a creamy and delicious milk in your breasts. They'll never become sore from not being milked, 
+you chose how much you produce at all times. 
+</button>
+<button style="border: outset;" id="FullStop" onclick="Click(-1, 'FullStop', [], )">
+<img src="Pictures/FullStop.JPG" width="200"><br>
+Full stop - 1 point<br>
+Although you still have a menstrual cycle it is heavily reduced in severity, you will no longer suffer any ill effects from 
+it.
+</button>
+<button style="border: outset;" id="EasyPregnancy" onclick="Click(-1, 'EasyPregnancy', [], )">
+<img src="Pictures/EasyPregnancy.JPG" width="200"><br>
+Easy pregnancy - 1 point<br>
+You can chose if you get pregnant when having sex. If you get pregnant it will only last for a few months and you will 
+experience none of the negative side effects during or afterwards. Childbirth is also painless. You cannot choose if you get 
+pregnant if you have one of the banes that affects pregnancy chance. However the effects on the pregnancy itself will remain the same. 
+</button>
+<button style="border: outset;" id="Motherly" onclick="Click(-1, 'Motherly', [], )">
+<img src="Pictures/Motherly.JPG" width="200"><br>
+Motherly - 1 point<br>
+You gain a natural instinct for child rearing, raising a child vela come naturally to you and you will always give your kids the 
+absolute best start in life. 
+</button>
+<button style="border: outset;" id="Oviposition" onclick="Click(-1, 'Oviposition', [], )">
+<img src="Pictures/Oviposition.PNG" width="200"><br>
+Oviposition - 1 point<br>
+Rather than giving birth to a baby you lay eggs. Also, laying unfertilised eggs monthly will replace your period and it wiIl always feel amazing. 
+Choose now if you lay lots of smaller eggs or one or two large ones. 
+</button>
+<button style="border: outset;" id="Stretchy" onclick="Click(-1, 'Stretchy', [], )">
+<img src="Pictures/Stretchy.PNG" width="200"><br>
+Stretchy - 1 point<br>
+Your holes can endure a huge amount of punishment and tighten back up again in hours, huge insertions are also easy to take. 
+This will also make them tighter so you will feel satisfied by any size. 
+</button>
+<button style="border: outset;" id="PerfectFit" onclick="Click(-1, 'PerfectFit', [], )">
+<img src="Pictures/PerfectFit.PNG" width="200"><br>
+Perfect fit - 1 point<br>
+No matter the tightness of a hole, your dick will always fit perfectly and will satisfy the both of you. 
+</button>
+<button style="border: outset;" id="MoreHoles" onclick="Click(-1, 'MoreHoles', [], )">
+<img src="Pictures/MoreHoles.PNG" width="200"><br>
+More holes - 1 point<br>
+Makes your nipples penetrable. letting you take cocks into your warm and wet breasts with ease. How much you can take will 
+depend on your breast size and the holes will be as sensitive as any pussy. Also. this makes your urethra extra stretchy 
+and sensitive. so you can takes dicks in your dick.... If that's what you're into. 
+</button>
+<button style="border: outset;" id="Tentacles" onclick="Click(-1, 'Tentacles', [], );unClick('TentaclesPlus', -1)">
+<img src="Pictures/Tentacles.PNG" width="200"><br>
+Tentacles - 1 point<br>
+Your body can grow tentacles at will, all of them are quite sensitive and easy to control. They can take the shape of long 
+flexible fleshy dicks, green vines like plant girls have or smooth shiny tentacles like a tentacle monster would have and 
+anything else you can think of.
+</button>
+<button style="border: outset;" id="TentaclesPlus" onclick="dis('Tentacles','TentaclesPlus',-1,'You need to have the previous option enabled')">
+<img src="Pictures/Tentacles.PNG" width="200"><br>
+Tentacles plus - 1 point<br>
+You can pay 1 point on top of the previous one, to let you impregnate people with your tentacles 
+or lay eggs in them for someone to fertilise. 
+</button>
+<button style="border: outset;" id="STDImmunity" onclick="Click(-1, 'STDImmunity', [], )">
+<img src="Pictures/STDImmunity.PNG" width="200"><br>
+STD immunity - 1 point<br>
+Does what it says on the tin. although are you sure you'll be sleeping with the kind of people that 
+might have these? I thought I told you to be careful.
+</button>
+<button style="border: outset;" id="Lubrication" onclick="Click(-1, 'Lubrication', [], )">
+<img src="Pictures/Lubrication.PNG" width="200"><br>
+Lubrication - 1 point<br>
+Your vagina becomes especially wet when aroused and your anus now produces its own lubrication. 
+Try not to get horny in public while wearing light colored clothing 
+</button>
+<button style="border: outset;" id="LustAura" onclick="Click(-1, 'LustAura', [], )">
+<img src="Pictures/LustAura.PNG" width="200"><br>
+Lust aura - 1 point<br>
+You can create a feeling of arousal in those around you on command. 
+You can control how intense it is and if it affects everyone or just one person.
+</button>
+<button style="border: outset;" id="Flexible" onclick="Click(-1, 'Flexible', [], )">
+<img src="Pictures/Flexible.PNG" width="200"><br>
+Flexible - 1 point<br>
+You can bend and stretch your body in ways most people can't. 
+Useful for licking your own pussy or sucking your own dick and for some more adventurous sex positions. 
+</button>
+<button style="border: outset;" id="Weredick" onclick="Click(-1, 'Weredick', [], )">
+<img src="Pictures/Weredick.PNG" width="200"><br>
+Weredick - 1 point<br>
+You can hide your male genitalia when wearing clothes. Note this doesn't make them disappear or reappear, 
+when you're naked it'll be there but it won't show up when wearing leggings, for example, unless you want it to.
+</button>
+<button style="border: outset;" id="FreePass" onclick="Click(-1, 'FreePass', [], );unClick('FreePassPlus', -1)">
+<img src="Pictures/FreePass.PNG" width="200"><br>
+Free pass - 1 point<br>
+You can be as lewd as you want in public short of the more extreme end, like full naked sex on the table in a 
+family restaurant. and no one will care. Perfect if you have forced exhibitionism from the Underwhere? 
+and/or Showoff banes or Just wanna grope people in public.
+</button>
+<button style="border: outset;" id="FreePassPlus" onclick="dis('FreePass','FreePassPlus',-1,'You need to have the previous option enabled')">
+<img src="Pictures/FreePass.PNG" width="200"><br>
+Free pass plus - 1 point<br>
+Upgrade the previouse to let you do anything lewd and no one will bat an eye. 
+</button>
+<button style="border: outset;" id="Switcheroo" onclick="Click(-1, 'Switcheroo', [], )">
+<img src="Pictures/Switcheroo.PNG" width="200"><br>
+Switcheroo - 1 point<br>
+You can switch the gender of someone by having prolonged physical contact with them for an hour 
+it doesn't matter if is just hugging or something.... more intimate. However they will switch 
+back it you don't do this at least once a week. They will always turn out attractive. 
+</button>
+<button style="border: outset;" id="WaifuHusbando" onclick="Click(-2, 'WaifuHusbando', [], )">
+<img src="Pictures/WaifuHusbando.PNG" width="200"><br>
+The perfect waifu/husbando - 2 points<br>
+Your perfect partner will meet you within two days of you starting your new life and trust me 
+you will know when its them. They will love you forever and always be by your side. 
+Naturally they will have any fetishes you have and will be a perfect match for you. 
+</button>
+<button style="border: outset;" id="WWTLF" onclick="Click(-2, 'WWTLF', [], )">
+<img src="Pictures/WWTLF.JPG" width="200"><br>
+Who wants to live forever - 2 points<br>
+You are immortal, the way that you sustain this is up to you. Eg: angels tend to sustain their immortality 
+by doing good deeds, a succubus or kitsune might do this through sex etc. You can also choose if you age and 
+when you die you can also give this to anyone you are romantically involved with. 
+</button>
+<button style="border: outset;" id="OrientationShift" onclick="Click(-1, 'OrientationShift', [], )">
+<img src="Pictures/OrientationShift.PNG" width="200"><br>
+Orientation shift - 1 point<br>
+You can change the sexual onentation of someone to be anything you want. Can be active on multiple people with a cooldown of a week per use.
+</button>
+<button style="border: outset;" id="NSH" onclick="Click(-1, 'NSH', [], )">
+<img src="Pictures/NSH.PNG" width="200"><br>
+Nothing suspicious here - 1 point<br>
+No matter what species you pick, no one will ever find it weird that you obviously aren't human and will act like you are human. 
+Alternatively around 10% of the world's population will be turned into the same species as you, so your family members and friends 
+will notice your change (if you decide to carry on with your old life.). But you wont be thought of as a freak and you'll be 
+accepted by most people. 
+</button>
+</p>
+<p>Banes<br>
+<button style="border: outset;" id="Unfit" onclick="dis2(['Athletic', 'RecordBreaking'], 2, 'Unfit', 1, 'You need to disable some pervious options.')">
+<img src="Pictures/Unfit.PNG" width="200"><br>
+Unfit + 1 point<br>
+You get out of breath by running for more than 10 minutes at a time and sports in general are really hard for you. 
+Cannot be taken with athletic or record breaking. 
+</button>
+<button style="border: outset;" id="ToxicWaste" onclick="dis2(['MasterChef'], 1, 'ToxicWaste', 1, 'You need to disable some pervious options.')">
+<img src="Pictures/ToxicWaste.PNG" width="200"><br>
+Toxic waste + 1 point<br>
+You are a god awful cook and anything you make would probably break several international treaties on biological weapons. 
+Try to stay away from the kitchen. Cannot be taken with Master chef. 
+</button>
+<button style="border: outset;" id="Lazy" onclick="Click(1, 'Lazy', [], )">
+<img src="Pictures/Lazy.PNG" width="200"><br>
+Lazy + 1 point<br>
+You are always at least a little bit tired and can't be bothered to do strenuous activity. A natural bottom during sex. 
+</button>
+<button style="border: outset;" id="EasilyEmbarrassed" onclick="Click(1, 'EasilyEmbarrassed', [], )">
+<img src="Pictures/EasilyEmbarrassed.PNG" width="200"><br>
+Easily embarrassed + 1 point<br>
+You are easily embarrassed and will turn bright red especially if caught in a... ahem.... Compromising position. 
+However this will fade away the more you share time with a person but its only for that person, 
+you're still just as easily embarrassed as before when with strangers. 
+</button>
+<button style="border: outset;" id="FreeHugs" onclick="Click(1, 'FreeHugs', [], )">
+<img src="Pictures/FreeHugs.PNG" width="200"><br>
+Free hugs + 1 point<br>
+Non lewd displays of affection such as hugging and kissing sustain you. If you don't engage in these regularly you 
+will feel tired and under the weather constantly. If you do them with someone that you really care about and if 
+they really care about you you can go longer between these displays of affection without the negative effects. 
+</button>
+<button style="border: outset;" id="LiquidLunch" onclick="Click(2, 'LiquidLunch', [], )">
+<img src="Pictures/LiquidLunch.PNG" width="200"><br>
+Liquid lunch + 2 points<br>
+If you don't swallow cum (either pussy juice or semen) at least once a day you will feel lethargic and incredibly hungry, 
+after a week you will barely bo able to move from the hunger pains. 
+Easy to keep on top of if you have a partner willing to help you though. 
+</button>
+
+<button style="border: outset;" id="AlwaysReady" onclick="Click(1, 'AlwaysReady', [], )">
+<img src="Pictures/AlwaysReady.PNG" width="200"><br>
+Always ready + 1 point<br>
+You are always ready for sex no matter what, if you have a dick it will always be erect and if you have a pussy 
+it will always be wet, your nipples will also be erect constantly. This doesn't increase your libido however. 
+</button>
+<button style="border: outset;" id="SexAddict" onclick="Click(2, 'SexAddict', [], )">
+<img src="Pictures/SexAddict.PNG" width="200"><br>
+Sex addict + 2 point<br>
+Your libido gets a huge boost and only increases it you spend a while without having sex, 
+until all you can think of is sex. Will lake many hours of sex to get it back under control if you let it get bad. 
+</button>
+<button style="border: outset;" id="RollTheDice" onclick="Click(1, 'RollTheDice', [], )">
+<img src="Pictures/RollTheDice.PNG" width="200"><br>
+Roll the dice - 1 point<br>
+Your sexual orientation is randomly assigned when you finish this form, you could be only into girls, only into guys or both. 
+</button>
+<button style="border: outset;" id="MilkFountain" onclick="dis2(['Lactation'], 1, 'MilkFountain', 1, 'You need to disable some pervious options.')">
+<img src="Pictures/MilkFountain.PNG" width="200"><br>
+Milk fountain + 1 point<br>
+Your breasts produce a ridiculous amount of tasty milk and can stretch to hold it all. 
+Expect to grow several cup sizes every day unless you milk yourself regularly. Cannot be taken with lactation. 
+</button>
+<button style="border: outset;" id="BallBalloons" onclick="Click(1, 'BallBalloons', [], )">
+<img src="Pictures/BallBalloons.PNG" width="200"><br>
+Ball balloons + 1 point<br>
+Like with milk fountain, your balls become nice and stretchy, able to hold a ton of cum. 
+Their production also gets a nice boost so unless you empty them regularly they'll rapidly 
+grow too big to manage. If you have internal balls this causes your abdomen to swell instead, 
+ making you look pregnant if you haven't cum In a while. 
+</button>
+<button style="border: outset;" id="XenoGenitals" onclick="Click(1, 'XenoGenitals', [], )">
+<img src="Pictures/XenoGenitals.PNG" width="200"><br>
+Xeno genitals + 1 point<br>
+Your genitals are anything but normal, something like a foot long tentacle dick or a pussy filled with wriggling feelers. 
+Can also alter your breasts as well, such as gaining nippledicks. This can also give you multiple sets of genitals and/or breasts. 
+You can change as many things as you like at once but it won't give you extra points. 
+</button>
+
+<button style="border: outset;" id="IceCold" onclick="Click(1, 'IceCold', [], )">
+<img src="Pictures/IceCold.PNG" width="200"><br>
+Ice cold + 1 point<br>
+You are completely disinterested in sex, although you may still engage in it for procreation you won't enjoy it. 
+But why would you ever take this? Cannot be taken with anything that would increase your sensitivity or libido. 
+</button>
+<button style="border: outset;" id="YouWannaDoWhat" onclick="Click(2, 'YouWannaDoWhat', [], )">
+<img src="Pictures/YouWannaDoWhat.PNG" width="200"><br>
+You wanna do what?!? + 2 point<br>
+Rather than just being disinterested, the very idea of sex terrifies you. It'll lake a long time for you to be prepared 
+to do it with someone and even then all the new sensations will massively scare you, until you can get used to them over 
+a very long period of time. However, you can learn to enjoy it and weaken the 
+effects of this bane over many years unlike with Ice cold. 
+</button>
+<button style="border: outset;" id="BarbieGirl" onclick="Click(1, 'BarbieGirl', [], )">
+<img src="Pictures/BarbieGirl.PNG" width="200"><br>
+Barbie girl + 1 point<br>
+Rather than being natural, your ass and breasts will look and feel completely fake. 
+</button>
+<button style="border: outset;" id="TheTownBicycle" onclick="Click(2, 'TheTownBicycle', [], )">
+<img src="Pictures/TheTownBicycle.PNG" width="200"><br>
+The town bicycle + 2 points<br>
+People will expect you to be up for sex at any time and will become offended if you refuse Them. You become a public use 
+cum dump and no one will find it weird for people to bend you over in the street and start railing you, 
+although relatives wont do this they still won't see anything weird about it. Keep in mind this doesn't change your 
+libido so if you want to enjoy continuous sex with just about everyone a libido boosting bane would be helpful. 
+</button>
+<button style="border: outset;" id="FunInPublic" onclick="Click(1, 'FunInPublic', [], )">
+<img src="Pictures/FunInPublic.PNG" width="200"><br>
+Fun in public + 1 point<br>
+People will be very comfortable being lewd around and mostly to you in public. Expect to have your breasts groped as a 
+greeting and be teased by various people constantly. No one will find these actions strange. 
+</button>
+<button style="border: outset;" id="BasicBitch" onclick="Click(1, 'BasicBitch', [], )">
+<img src="Pictures/BasicBitch.PNG" width="200"><br>
+Basic bitch + 1 point<br>
+You turn into a low level bimbo over time, becoming more basic and loss interested in intellectual things. 
+However you don't actually become less intelligent, it's Just harder to focus on studies. Your libido will also 
+gradually increase although it won't be too much to handle. 
+</button>
+
+<button style="border: outset;" id="MegaBimbo" onclick="Click(2, 'MegaBimbo', [], )">
+<img src="Pictures/MegaBimbo.PNG" width="200"><br>
+Mega bimbo + 2 points<br>
+With this you actually do become less intelligent. Your libido will also increase over time and if you weren't 
+into them before, you are totally into guys and dick now. Even if you take razor sharp it will only bring you 
+back up to your current level of intelligence. 
+</button>
+<button style="border: outset;" id="FullBodyStimulation" onclick="Click(1, 'FullBodyStimulation', [], )">
+<img src="Pictures/FullBodyStimulation.PNG" width="200"><br>
+Full body stimulation + 1 point<br>
+Your entire body is now an erogenous zone, have fun with tight clothing. 
+</button>
+<button style="border: outset;" id="Heat" onclick="Click(1, 'Heat', [], )">
+<img src="Pictures/Heat.PNG" width="200"><br>
+Heat + 1 point<br>
+Every so often you will go into heat and be unable to think of anything else until someone fucks you. 
+Your fertility is unchanged during this time though. 
+</button>
+<button style="border: outset;" id="LatexCollar" onclick="Click(1, 'LatexCollar', [], )">
+<img src="Pictures/LatexCollar.PNG" width="200"><br>
+Latex collar + 1 point<br>
+You are given a silver, smooth metal collar which is impossible to remove once put on and it contains a special liquid. 
+When you shower, masturbate or have sex it retreats up into the waterproof metal collar, but only if you want it to. 
+However at any other time the liquid spreads over your body and solidifies into a thin rubbery layer, creating a perfectly 
+tight black latex bodysuit from the neck down. It slightly increases your sensitivity and with the correct 
+application of clothes you can avoid having it seen. 
+</button>
+<button style="border: outset;" id="SuperFertile" onclick="Click(1, 'SuperFertile', [], )">
+<img src="Pictures/SuperFertile.PNG" width="200"><br>
+Super fertile + 1 point<br>
+Without the proper use of contraceptives (and even sometimes those can fail as well). 
+You will become pregnant any time you have sex and someone with a dick cums inside you. 
+This also makes your sperm super fertile, make sure you wear a condom unless you want kids. 
+Also increases the chances of having twins or triplets. 
+</button>
+<button style="border: outset;" id="Broodmother" onclick="Click(2, 'Broodmother', [], )">
+<img src="Pictures/Broodmother.PNG" width="200"><br>
+Broodmother + 2 points<br>
+Any time you have sex, even scissoring with a girl, you will gel pregnant. Birth control will not help. 
+This also increases the potency of your own cum to a ridiculous degree, all most girls would have to do 
+is have you cum near their vagina to gel pregnant. Can't say I recommend this one. Also increases the 
+number of children you can get pregnant with by a lot. 
+</button>
+
+<button style="border: outset;" id="Barren" onclick="sp(['Dick','SuperFertile','Broodmother','EasyPregnancy'], 4, 'Barren', 1, 'You need to disable some pervious options.')">
+<img src="Pictures/Barren.PNG" width="200"><br>
+Barren + 1 point<br>
+You can never get pregnant, could also be interpreted as a boon since you'll never need birth control. 
+Cannot take with any fertility boosting boons or banes and can only be taken if you have a vagina. 
+</button>
+<button style="border: outset;" id="Easy" onclick="Click(1, 'Easy', [], )">
+<img src="Pictures/Easy.PNG" width="200"><br>
+Easy + 1 point<br>
+You're incredibly weak when it comes to others trying to force themselves on you. You just can't seem to say no, 
+this doesn't increase you libido, just makes you easier to get in bed. 
+</button>
+<button style="border: outset;" id="Lightweight" onclick="Click(1, 'Lightweight', [], )">
+<img src="Pictures/Lightweight.PNG" width="200"><br>
+Lightweight + 1 point<br>
+You can't hold your liquor at all and will be completely smashed after just a couple of drinks. Make sure you have friends you can trust. 
+</button>
+<button style="border: outset;" id="Gullible" onclick="Click(1, 'Gullible', [], )">
+<img src="Pictures/Gullible.PNG" width="200"><br>
+Gullible + 1 point<br>
+You find it hard to tell if someone is tying to you unless its painfully obvious, like the sky being purple or something like that. 
+I hope you have friends you can trust. 
+</button>
+<button style="border: outset;" id="HSS" onclick="HSS()">
+<img src="Pictures/HSS.PNG" width="200"><br>
+Hear no evil, speak no evil, see no evil + 1/2/3 points<br>
+Chose a combination of deafness, being mute, blindness or all three. Gain one point for each one you take. <br>
+<input type="checkbox" id="Hear" value="Hear" onclick="box('Hear')">Hear <input type="checkbox" id="Speak" value="speak" onclick="box('Speak')">Speak <input type="checkbox" id="See" value="see" onclick="box('See')">See
+</button>
+<button style="border: outset;" id="Underwhere" onclick="Click(1, 'Underwhere', [], )">
+<img src="Pictures/Underwhere.PNG" width="200"><br>
+Underwhere + 1 point<br>
+You can no longer wear panties and bras, either they disappear as you put them on or you just can't bring yourself 
+to wear them and they feel incredibly uncomfortable. Combine with showoff and a skirt to be a realty dirty girl. 
+This will enhance your more bouncy areas to be a bit more firm to avoid excessive jiggling due to not wearing underwear. 
+</button>
+
+<button style="border: outset;" id="Showoff" onclick="Click(1, 'Showoff', [], )">
+<img src="Pictures/Showoff.PNG" width="200"><br>
+Showoff + 1 point<br>
+Any clothes you wear will change to show off your curves. Loose summer dresses will tighten around your bust and show off a 
+huge amount of cleavage, leggings will dig into your pussy if you have one and show a huge cameltoe and skids will shorten 
+until they give frequent panty shots. 
+</button>
+<button style="border: outset;" id="JigglePhysics" onclick="Click(1, 'JigglePhysics', [], )">
+<img src="Pictures/JigglePhysics.PNG" width="200"><br>
+Jiggle physics + 1 point<br>
+Your breasts are ridiculously jiggly and bounce around with an exaggerated movement with your every step. 
+Welcome to being a dead or alive character. 
+</button>
+<button style="border: outset;" id="Colorblind" onclick="Click(1, 'Colorblind', [], )">
+<img src="Pictures/Colorblind.PNG" width="200"><br>
+Colorblind + 1 point<br>
+ Chose one of the kinds of color-blindness to get, from the more common ones to total color-blindness. 
+</button>
+<button style="border: outset;" id="LessThen" onclick="Click(1, 'LessThen', [], )">
+<img src="Pictures/LessThen.PNG" width="200"><br>
+Less then 20/20 + 1 point<br>
+ Your vision is bad enough to require glasses to see properly, some may consider this a boon however. 
+</button>
+<button style="border: outset;" id="Quiet" onclick="dis2(['Speak'], 1, 'Quiet', 1, 'You need to disable some pervious options.')">
+<img src="Pictures/Quiet.PNG" width="200"><br>
+Quiet + 1 point<br>
+Cannot be taken if you become a mute from speak no evil. You just can't bring yourself to talk loudly 
+and shouting for you will just be normal talking to most people. You'll sound more submissivo and oxpect 
+lots of people to tell you to speak up constantly. Cute if you can pull it off. 
+</button>
+<button style="border: outset;" id="Balloon" onclick="Click(1, 'Balloon', [], )">
+<img src="Pictures/Balloon.PNG" width="200"><br>
+Balloon + 1 point<br>
+Any partners you have sex with that has a dick will produce a ridiculous amount of cum that will inflate your belly. 
+Dont worry I will make your body stretchy enough to handle it. 
+</button>
+
+<button style="border: outset;" id="Cocksleeve" onclick="Click(1, 'Cocksleeve', [], )">
+<img src="Pictures/Cocksleeve.PNG" width="200"><br>
+Cocksleeve + 1 point<br>
+You just can't go to sloop without a dick inside you, or without yours inside someone else Don't worry if you're a lesbian though, 
+you and your partner will just need to be connected by a double ended dildo. This won't affect your partner's sloop no matter how 
+tight your pussy is or how big your dick is. 
+</button>
+<button style="border: outset;" id="Messy" onclick="Click(1, 'Messy', [], )">
+<img src="Pictures/Messy.PNG" width="200"><br>
+Messy + 1 point<br>
+Your orgasms are extremely messy, if you have a vagina you will squid everywhere and if you have a dick you with shoot your giant load everywhere, 
+if it isn't contained inside someone of course. 
+</button>
+<button style="border: outset;" id="Inconceivable" onclick="Click(2, 'Inconceivable', [], )">
+<img src="Pictures/Inconceivable.PNG" width="200"><br>
+Inconceivable + 2 points<br>
+Life is now somewhere between a porno and a comedic anime. you trip and land on a dude's face on a day you were going commando in a skirt. 
+Get locked out of your apartment in nothing but a towel and have that get stolen by a dog. A girl accidentally sits on your lap on a 
+crowded bus and decides to get herself oft on the erection she is surprised to discover. Going a day without being edged, teased, 
+or groped is practically impossible. 
+</button>
+<button style="border: outset;" id="Parasite" onclick="Click(2, 'Parasite', [], )">
+<img src="Pictures/Parasite.PNG" width="200"><br>
+Parasite + 2 points<br>
+A parasite lives inside you. either in your womb, ass or somewhere less conventional like your dick or balls and it 
+feeds off sexual fluids. It will constantly stimulate you to feed and will try to make you horny around others to 
+try to get you to sleep with them. Every so often it will lay eggs that you can put into others to infest them as well. 
+If it gets particularly large you will look pregnant. If you do actually get pregnant the parasite 
+won't damage the baby in any way. 
+</button>
+<button style="border: outset;" id="InterdimensionalTentacle" onclick="Click(1, 'InterdimensionalTentacle', [], )">
+<img src="Pictures/InterdimensionalTentacle.PNG" width="200"><br>
+Interdimensional tentacle rape + 1 point<br>
+Once every three weeks, tentacles will appear in your room at night and roughly fuck you for several hours then 
+fill you with their young. It will feel absolutely amazing as they move around and a few days later they will be born. 
+</button>
+<button style="border: outset;" id="LapseInConcentration" onclick="Click(1, 'LapseInConcentration', [], )">
+<img src="Pictures/LapseInConcentration.PNG" width="200"><br>
+Lapse in concentration + 1 point<br>
+Unless you're being constantly stimulated you can't think straight. Something like a bullet vibe on a low setting 
+will be enough to avoid the negative effects of this bane but you'll have to wear it constantly. 
+</button>
+<button style="border: outset;" id="DivineJudgment" onclick="Click(1, 'DivineJudgment', [], )">
+<img src="Pictures/DivineJudgment.PNG" width="200"><br>
+Divine Judgment + 1 point<br>
+Any time you do something you know is bad, you will receive punishment equal to the severity of your crime. 
+Eg: if you rape someone as a succubus because you haven't had sex in a long time and can control yourself 
+you won't be punished, but if you do it while not starved you will be punished. 
+</button>
+</p>
+<p>Location<br>
+This section is for choosing where you end up reincarnated.<br>
+<button style="border: outset;" id="YOL" onclick="Click(0, 'YOL', ['ModernWorld','Fantasy','Future','ChooseYourOwn'], 4)">
+<img src="Pictures/YOL.PNG" width="200"><br>
+Your old life<br>
+You reincarnate in your new body just ten minutes after your death in the same area where you live, 
+unless you took out in the rain you can settle back into your old life straight away. 
+</button>
+<button style="border: outset;" id="ModernWorld" onclick="Click(0, 'ModernWorld', ['YOL','Fantasy','Future','ChooseYourOwn'], 4)">
+<img src="Pictures/ModernWorld.PNG" width="200"><br>
+Modern world<br>
+You are reincarnated just ten minutes after your death in your new body, but in any country around the 
+world apart from the one you lived in all this time. If the language is one you don't speak you become fluent in that language. 
+</button>
+<button style="border: outset;" id="Fantasy" onclick="Click(-1, 'Fantasy', ['ModernWorld','YOL','Future','ChooseYourOwn'], 4)">
+<img src="Pictures/Fantasy.PNG" width="200"><br>
+Fantasy - 1 point<br>
+You are reincarnated into a world of swords and sorcery. Do whatever you like, go killing dragons or settle down with 
+a family and run your own tavern, it sure sounds like a lot of fun. Monster girls and guys are common and none of the 
+non human species will be out of place. 
+</button>
+<button style="border: outset;" id="Future" onclick="Click(0, 'Future', ['ModernWorld','Fantasy','YOL','ChooseYourOwn'], 4)">
+<img src="Pictures/Future.PNG" width="200"><br>
+Future<br>
+You are reincarnated at some point in the future, ifs your choice as to the kind of future you reincarnate into. 
+It could be a galaxy spanning space opera or a dark dystopian cyberpunk future on an overcrowded earth. up to you. 
+Aliens (If you chose one where humanity has gone into space beyond our solar system.) and/or genetic modification 
+are commonplace so the different non-human species are not thought of as weird. 
+</button>
+<button style="border: outset;" id="ChooseYourOwn" onclick="Click(-1, 'ChooseYourOwn', ['ModernWorld','Fantasy','Future','YOL'], 4)">
+<img src="Pictures/ChooseYourOwn.PNG" width="200"><br>
+Choose your own - 1 point<br>
+Don't like any of the options here? Don't worry, I can set you up with a custom order form but it'll cost a bit more. 
+Just write here the description of where you wanna go. 
+</button>
+<br>
+<button onclick="end()">What did i pick?</button>
+<div id="MyPick"></div>
+</p>
+<div width="100%" style="background-color:grey; color:white;">All characters are 18+</div>
+</center>
+</body>
+</html>
