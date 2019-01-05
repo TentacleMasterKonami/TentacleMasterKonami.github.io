@@ -114,7 +114,7 @@ function MyPick() {
     }
     else if(document.getElementById('Normal').style.borderStyle == 'inset'){
         
-        document.getElementById('Intelligence').innerHTML = "Normal <br>";
+        document.getElementById('BodySize').innerHTML = "Normal <br>";
     }
     else if(document.getElementById('Large').style.borderStyle == 'inset'){
         
