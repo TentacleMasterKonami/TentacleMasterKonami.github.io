@@ -254,7 +254,6 @@ function end(){
 	}
 	for(r=0; r < race.length; r++){
 		if(document.getElementById(race[r]).className == 'inset'){
-			alert(race[r]);
 			document.getElementById("end").innerHTML += race[r] + " )";
 		}
 	}
