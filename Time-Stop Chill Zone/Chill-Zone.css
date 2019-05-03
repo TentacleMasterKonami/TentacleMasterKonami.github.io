@@ -1,0 +1,194 @@
+@font-face {
+font-family: "8-BIT-WONDER";
+src: url("Fonts/8-BIT-WONDER.TTF");
+src: 
+url("Fonts/8-BIT-WONDER.TTF") format("TTF"),
+}
+body {
+	background-color: #0cc00c;
+	margin-bottom: -8px;
+}
+.squareL {
+	font-family: '8-BIT-WONDER', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+	font-size: 21px;
+	background-color: rgba(204, 204, 255, 0.55);
+	padding: 4px;
+	display: block;
+	width: 400px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	text-align: center;
+	border: 5px #88f solid;
+}
+h1.squareL{
+	font-size: 54px;
+	text-align: center;
+	position: relative;
+	background-color: rgba(204, 204, 255, 0);
+	padding: 0px;
+	left: -4;
+	top: -10px;
+	border: 0px;
+}
+.squareR {
+	font-family: '8-BIT-WONDER', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+	background-color: rgba(204, 204, 255, 0.55);
+	padding: 4px;
+	display: block;
+	position: relative;
+	width: 160px;
+	top: -165px;
+	right: 5px;
+	text-align: center;
+	border: 5px #88f solid;
+	float: right;
+}
+.intro {
+	font-family: arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+	background-color: rgba(204, 204, 255, 0.55);
+	padding: 4px;
+	display: block;
+	position: relative;
+	top: 50px;
+	left: 20px;
+	width: 50%;
+	border: 5px #88f solid;
+}
+.TOP {
+	background-image: url(Pictures/Top-Background.png);
+	background-position: top right;
+	background-size: cover;
+	margin: -8px;
+	padding-bottom: 100px;
+	border-bottom: 5px #88f solid;
+}
+.division {
+	padding: 8px;
+}
+.titleL {
+	font-family: '8-BIT-WONDER', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+	text-align: center;
+	position: relative;
+	margin: 5px;
+	float: left;
+	margin-left: -10px;
+	padding-top: 40px;
+	/*padding-bottom: 20px;*/
+	height: 60px;
+	border: 5px solid #bb1b1b;
+	width: 22%;
+	background-color: #eadbc8;
+}
+.titleR {
+	font-family: arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+	position: relative;
+	margin: 5px;
+	border: 5px solid #88f;
+	float: right;
+	margin-right: -10px;
+	width: 72%;
+	height: 90px;
+	padding: 5px;
+	background-color: #eadbc8;
+}
+.choice {
+	width: 15%;
+	margin: 0.6%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.unselect {
+	border: 5px solid #88f;
+	background-color: #ddf;
+	width: 15%;
+	margin: 0.6%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.select {
+	border: 5px solid #f00;
+	background-color: #ddf;
+	width: 15%;
+	margin: 0.6%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.cardDiv {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0px;
+}
+.cardL {
+	position: relative;
+	float: left;
+	margin-top: 8px;
+	border: 5px solid #000;
+	width: 35%;
+}
+.cardR {
+	position: relative;
+	float: right;
+	width: 60%;
+}
+.BOTTOM {
+	background-image: url(Pictures/background-bottom.jpg);
+	background-position: bottom right;
+	background-size: cover;
+	margin: -8px;
+	margin-bottom: -21px;
+	padding-top: 100px;
+	padding-bottom: 500px;
+	border-top: 5px #88f solid;
+	
+}
+.outro {
+	font-family: arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+	background-color: rgba(204, 204, 255, 0.75);
+	padding: 4px;
+	display: block;
+	position: relative;
+	top: 50px;
+	/*left: 25%;*/
+	width: 50%;
+	border: 5px #88f solid;
+}
+img {
+	width: 100%;
+}
+div.fixed {
+	position: fixed;
+    top: 0;
+    left: 47%;
+    width: 100px;
+    border: 5px #88f solid;
+    background-color: rgba(204, 204, 255, 1);
+	z-index: 10;
+}
+.what {
+	position: relative;
+    top: 32px;
+	background-color: rgba(204, 204, 255, 0.75);
+	border: 5px #88f solid;
+	width: 35%;
+}
+.res {
+	position: relative;
+    top: 70px;
+	background-color: rgba(204, 204, 255, 0.75);
+	border: 5px #88f solid;
+	width: 20%;
+	min-height: 1em;
+}
