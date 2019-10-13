@@ -1,0 +1,328 @@
+<html>
+<head>
+<title>Island</title>
+<link rel="stylesheet" type="text/css" href="Island.css">
+</head>
+<body>
+<div id="points" class="fixed"></div>
+<center>
+<h1 class="Title">Wellcome to the Island</h1><br>
+It's ok if you don't remember why you're here. <br>
+The shock of death often makes people forget these things.<br>
+Luckily you made plans for this before you died so there would be no issues...<br>
+Thats weird. We don't seem to have your file here, maybe it got lost in transport.<br>
+Well then we should fill out a new form.<br><br>
+Here we go then.<br><br>
+The first thing you need to do is pick what kind of Island you want it to be.<br>
+If you select multiple types then you decide how they mix and in what proportions they're in.<br><br>
+<div id="Desert" class="Outset" onclick="Click('Desert',[''], -1, [], [''], [''])"><h4 style="margin: 5px;">Desert</h4> +1 point
+<img src="Pictures/Desert.png" width="300px">
+<p>A stereotypical desert island. Nothing but sand and a few dead shrubs. Finding water might be challenge and the heat alone can kill you.</p>
+</div>
+<div id="Forest" class="Outset" onclick="Click('Forest',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Forest</h4> FREE
+<img src="Pictures/Forest.png" width="300px">
+<p>This island is covered in a big forest, trees as far as the eye can see. You can decide how dence it is and what trees gow there.</p>
+</div>
+<div id="Volcanic" class="Outset" onclick="Click('Volcanic',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Volcanic</h4> FREE
+<img src="Pictures/Volcanic.png" width="300px">
+<p>This island was formed from a volcano thats still active. It wont erupt but there's a constant stream of lava flowing out at all times.</p>
+</div>
+<div id="Mountain" class="Outset" onclick="Click('Mountain',[''], -1, [], [''], [''])"><h4 style="margin: 5px;">Mountain</h4> +1 point
+<img src="Pictures/Mountain.png" width="300px">
+<p>With high altitudes and steep edges this island is covered in mountains. I bet the view from the top would be amazing.</p>
+</div>
+<div id="Ice" class="Outset" onclick="Click('Ice',[''], -2, [], [''], [''])"><h4 style="margin: 5px;">Ice</h4> +2 points
+<img src="Pictures/Ice.png" width="300px">
+<p>An island covered in ice and snow. A very cold place to live in espetialy if you're alone on the island.</p>
+</div>
+<div id="Flying" class="Outset" onclick="Click('Flying',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Flying</h4> FREE
+<img src="Pictures/Flying.png" width="300px">
+<p>It's a bird it's a plane it's a flying island. Or islands if you want, you can decide how or if they're connected.</p>
+</div>
+<br><br>
+Now that you know what type of island you want lets decide how big the island will be.<br>
+If you have a lot of types a Tiny island might not work well.<br><br>
+<div id="Tiny" class="Outset" onclick="Click('Tiny',['Small','Medium','Large'], -5, [-2,0,-1], [''], [''])"><h4 style="margin: 5px;">Tiny</h4> +5 points
+<img src="Pictures/Tiny.png" width="300px">
+<p>An exeptionaly small island. Between 1Km<sup>2</sup> and 10Km<sup>2</sup>. Living here could be quite a challenge.</p>
+</div>
+<div id="Small" class="Outset" onclick="Click('Small',['Tiny','Medium','Large'], -2, [-5,0,-1], [''], [''])"><h4 style="margin: 5px;">Small</h4> +2 points
+<img src="Pictures/Small.png" width="300px">
+<p>A small island usualy between 10Km<sup>2</sup> and 1000Km<sup>2</sup>. A bit on the small side but quite livable.</p>
+</div>
+<div id="Medium" class="Outset" onclick="Click('Medium',['Small','Tiny','Large'], 0, [-2,-5,-1], [''], [''])"><h4 style="margin: 5px;">Medium</h4> FREE
+<img src="Pictures/Medium.png" width="300px">
+<p>The regular size for an island. Between 1000Km<sup>2</sup> and 10&nbsp000Km<sup>2</sup>. Quite a bit of space to explore on this one.</p>
+</div>
+<div id="Large" class="Outset" onclick="Click('Large',['Small','Medium','Tiny'], -1, [-2,0,-5], [''], [''])"><h4 style="margin: 5px;">Large</h4> +1 point
+<img src="Pictures/Large.png" width="300px">
+<p>The biggest of the islands. With a size of 10&nbsp000Km<sup>2</sup> and up you could make it larger then the continents on earth.</p>
+</div>
+<br><br>
+Now thaat we know this we can decide how easy survival will be on the island.
+<br><br>
+<div id="Drink-and-Eat" class="Outset" onclick="Click('Drink-and-Eat',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Drink-and-Eat</h4> 1 point
+<img src="Pictures/Drink-and-Eat.png" width="300px">
+<p>Water and food will not be an issue with this option, as you will be able to find them easaly.</p>
+</div>
+<div id="Clothes" class="Outset" onclick="Click('Clothes',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Clothes</h4> 1 point
+<img src="Pictures/Clothes.png" width="300px">
+<p>Picking this option will give you the ability to find or make clothes that fit you easaly.</p>
+</div>
+<div id="Shelter" class="Outset" onclick="Click('Shelter',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Shelter</h4> 1 point
+<img src="Pictures/Shelter.png" width="300px">
+<p>If you pick this option finding shelter or the materials for shelter will be easy to come accross.</p>
+</div>
+<br><br>
+Now you get to pick what other races will inhabit the island.<br>
+You get to decide in what proportions and locations these races are in.<br>
+Remember if you have a smaller island it could get cramped.<br><br>
+<div id="Humans" class="Outset" onclick="Click('Humans',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Humans</h4> FREE
+<img src="Pictures/Humans.png" width="300px">
+<p>The normal race of humans. I'm sure you're familiar with them since you are human. You can decide their complection and the language they speak.</p>
+</div>
+<div id="Elves" class="Outset" onclick="Click('Elves',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Elves</h4> FREE
+<img src="Pictures/Elves.png" width="300px">
+<p>The standard fantasy race. They usualy live longer and can use magic.</p>
+</div>
+<div id="Dark-Elves" class="Outset" onclick="Click('Dark-Elves',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Dark-Elves</h4> FREE
+<img src="Pictures/Dark-Elves.png" width="300px">
+<p>The less standard fantasy race. They have a darked skin color then regular Elves but are otherwise the same.</p>
+</div>
+<div id="Fairies" class="Outset" onclick="Click('Fairies',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Fairies</h4> FREE
+<img src="Pictures/Fairies.png" width="300px">
+<p>They have wings on their backs and can fly and perform minor magic. You can decide how big they are.</p>
+</div>
+<div id="Kemonomimi" class="Outset" onclick="Click('Kemonomimi',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Kemonomimi</h4> FREE
+<img src="Pictures/Kemonomimi.png" width="300px">
+<p>These look human but have animal ears and a tail. Both are quite sensetive.</p>
+</div>
+<div id="Amazons" class="Outset" onclick="Click('Amazons',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Amazons</h4> FREE
+<img src="Pictures/Amazons.png" width="300px">
+<p>Strong and beutifull, what kind of island would this be without Amazons.</p>
+</div>
+<div id="Kitsune" class="Outset" onclick="Click('Kitsune',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Kitsune</h4> FREE
+<img src="Pictures/Kitsune.png" width="300px">
+<p>The island is home to quite a number of fox godessess. They normaly have many busshy tails.</p>
+</div>
+<div id="Angels" class="Outset" onclick="Click('Angels',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Angels</h4> FREE
+<img src="Pictures/Angels.png" width="300px">
+<p>If we have gods why not have angels as well. These pure hearted Angels will help you with whatever you might need.</p>
+</div>
+<div id="Succubi" class="Outset" onclick="Click('Succubi',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Succubi</h4> FREE
+<img src="Pictures/Succubi.png" width="300px">
+<p>Having angels and demons live on an island together might seem weird but for some reason they dont mind.</p>
+</div>
+<div id="Oni" class="Outset" onclick="Click('Oni',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Oni</h4> FREE
+<img src="Pictures/Oni.png" width="300px">
+<p>Again no one seems to mind demons on the island so the Oni use it as a vacation spot sometins.</p>
+</div>
+<div id="Dryad" class="Outset" onclick="Click('Dryad',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Dryad</h4> FREE
+<img src="Pictures/Dryad.png" width="300px">
+<p>The spirit of the forest is on the island. Wheter there's a forest here or not doesen't matter.</p>
+</div>
+<div id="Mermaids" class="Outset" onclick="Click('Mermaids',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Mermaids</h4> FREE
+<img src="Pictures/Mermaids.png" width="300px">
+<p>The Mermaids just need to return to any water once a day and they'll be fine. They can also transform their tails into legs.</p>
+</div>
+<div id="Centaurs" class="Outset" onclick="Click('Centaurs',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Centaurs</h4> FREE
+<img src="Pictures/Centaurs.png" width="300px">
+<p>Half human half horse. They're fast and don't like people riding them.</p>
+</div>
+<div id="Animals" class="Outset" onclick="Click('Animals',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Animals</h4> FREE
+<img src="Pictures/Animals.png" width="300px">
+<p>There are now different species of animals on the island as well. You decide which.</p>
+</div>
+<div id="Slime-Girls" class="Outset" onclick="Click('Slime-Girls',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Slime-Girls</h4> FREE
+<img src="Pictures/Slime-Girls.png" width="300px">
+<p>The island is inhabited by sentient slime. For some reason they take the form the person they like would like the most.</p>
+</div>
+<div id="Dragons" class="Outset" onclick="Click('Dragons',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Dragons</h4> FREE
+<img src="Pictures/Dragons.png" width="300px">
+<p>Creatures from legend, capable of breathing fire and flight. They can transform into more humanoid forms as well.</p>
+</div>
+<div id="Plant-girls" class="Outset" onclick="Click('Plant-girls',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Plant-girls</h4> FREE
+<img src="Pictures/Dragons.png" width="300px">
+<p>A mutation developed for attracting prey the Plant-girls have found the pleausers of the flest too great to restist.</p>
+</div>
+<div id="Tentacles" class="Outset" onclick="Click('Tentacles',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Tentacles</h4> FREE
+<img src="Pictures/Tentacles.png" width="300px">
+<p>A choice for the more kinki people, a tentacle monster is a great addition to any island.</p>
+</div>
+<div id="Insects" class="Outset" onclick="Click('Insects',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Insects</h4> FREE
+<img src="Pictures/Insects.png" width="300px">
+<p>Probably the kinkiest option on the list, these are no ordinary Insects. These are masive mostly harmless Insects.</p>
+</div>
+<br><br>
+Now you have to chose how compatible the other species are with you.<br><br>
+<div id="No" class="Outset" onclick="Click('No',['Yes','With-pregnancy'], -2, [0,0], [''], ['Consentual','Non-Consentual','Safe-Non-Consentual','Pregnant','Cumflation','Sex-Ray-Vision','Free-Use'])"><h4 style="margin: 5px;">No</h4> +2 points
+<img src="Pictures/No.png" width="300px">
+<p>There is no compatibility between species. There is no way for intercourse to occur.</p>
+</div>
+<div id="Yes" class="Outset" onclick="Click('Yes',['No','With-pregnancy'], 0, [-2,0], [''], ['Pregnant'])"><h4 style="margin: 5px;">Yes</h4> FREE
+<img src="Pictures/Yes.png" width="300px">
+<p>While intercourse can occur the end result will not produce any offspring. But you can still have fun.</p>
+</div>
+<div id="With-pregnancy" class="Outset" onclick="Click('With-pregnancy',['No','Yes','Safe-Non-Consentual','Pregnant','Control-Fertility','Easy-Pregnancy','In-Consevable','Very-Consevable'], 0, [-2,0,0,-1,1,1,-1,-1], [''], [''])"><h4 style="margin: 5px;">With-pregnancy</h4> FREE
+<img src="Pictures/With-pregnancy.png" width="300px">
+<p>Full on baby making sex. The females of one species can get pregnent with males of any other. The offspring will always be only one species, so no hybrids.</p>
+</div>
+<br><br>
+What kind of sex do the species on the island enjoy most.<br><br>
+<div id="Consentual" class="Outset" onclick="Click('Consentual',['Non-Consentual','Safe-Non-Consentual','Free-Use'], -1, [1,0,-2], [''], ['No'])"><h4 style="margin: 5px;">Consentual</h4> +1 point
+<img src="Pictures/Consentual.png" width="300px">
+<p>The inhabitants of the island ask for consent before inisiating sex and will expect you to do the same.</p>
+</div>
+<div id="Non-Consentual" class="Outset" onclick="Click('Non-Consentual',['Consentual','Safe-Non-Consentual'], 1, [-1,0], [''], ['No'])"><h4 style="margin: 5px;">Non-Consentual</h4> 1 point
+<img src="Pictures/Non-Consentual.png" width="300px">
+<p>The others on the island are there to have fun. That includes sex, which they will inishiate with or without consent.</p>
+</div>
+<div id="Safe-Non-Consentual" class="Outset" onclick="Click('Safe-Non-Consentual',['Consentual','Non-Consentual'], 0, [-1,1], ['With-pregnancy'], ['No'])"><h4 style="margin: 5px;">Safe-Non-Consentual</h4> FREE
+<img src="Pictures/Safe-Non-Consentual.png" width="300px">
+<p>Still wont ask for consent but there will be no offspring as a result of Non-Consentual sex.</p>
+</div>
+<br><br>
+Since you will be new on the island the other species might not accept you at first. <br>
+So here you can choose how fas they accept you.<br><br>
+<div id="Instant" class="Outset" onclick="Click('Instant',['Over-Time','Pregnant'], 1, [0,-1], [''], [''])"><h4 style="margin: 5px;">Instant</h4> 1 point
+<img src="Pictures/Instant.png" width="300px">
+<p>The other species on the island will accept you immediately.</p>
+</div>
+<div id="Over-Time" class="Outset" onclick="Click('Over-Time',['Instant','Pregnant'], 0, [1,-1], [''], [''])"><h4 style="margin: 5px;">Over-Time</h4> FREE
+<img src="Pictures/Over-Time.png" width="300px">
+<p>The regular option. It will take a bit of time for them to accept you.</p>
+</div>
+<div id="Pregnant" class="Outset" onclick="Click('Pregnant',['Instant','Over-Time'], -1, [1,0], ['With-pregnancy'], ['No','Yes'])"><h4 style="margin: 5px;">Pregnant</h4> +1 point
+<img src="Pictures/Pregnant.png" width="300px">
+<p>The others will only accept you afer you carry a child with one of their members. This needs to be done at least once per species.</p>
+</div>
+<br><br>
+Now it's time for you to select some perks with the points you have.<br><br>
+<div id="Invincibility" class="Outset" onclick="Click('Invincibility',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Invincibility</h4> 1 point
+<img src="Pictures/Invincibility.png" width="300px">
+<p>You can not take any damige from phisical attacks. You will not feel the pain.</p>
+</div>
+<div id="Immortality" class="Outset" onclick="Click('Immortality',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Immortality</h4> 1 point
+<img src="Pictures/Immortality.png" width="300px">
+<p>You will not age and will never die from disease or anything else. You will still feel the pain.</p>
+</div>
+<div id="Invisibility" class="Outset" onclick="Click('Invisibility',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Invisibility</h4> 1 point
+<img src="Pictures/Invisibility.png" width="300px">
+<p>What is says on the tin. You can become invisible so no one else can see you. They can hear and touch you however.</p>
+</div>
+<div id="Efficient" class="Outset" onclick="Click('Efficient',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Efficient</h4> 1 point
+<img src="Pictures/Efficient.png" width="300px">
+<p>Your body is more efficient in absorbing nutreants from food and will also stay in shape better.</p>
+</div>
+<div id="Printer" class="Outset" onclick="Click('Printer',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Printer</h4> 1 point
+<img src="Pictures/Printer.png" width="300px">
+<p>You can create any object that you would be able to hold in your hand. Regardless of size and shape.</p>
+</div>
+<div id="Night-Vision" class="Outset" onclick="Click('Night-Vision',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Night-Vision</h4> 1 point
+<img src="Pictures/Night-Vision.png" width="300px">
+<p>While you still need a light source you will be able to see a lot better then you normaly would.</p>
+</div>
+<div id="Clones" class="Outset" onclick="Click('Clones',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Clones</h4> 1 point
+<img src="Pictures/Clones.png" width="300px">
+<p>You can now make living clones of yourself or anyone you are touching. The clones will obey you and can be recalled at will.</p>
+</div>
+<div id="Transformation" class="Outset" onclick="Click('Transformation',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Transformation</h4> 1 point
+<img src="Pictures/Transformation.png" width="300px">
+<p>You can change your body however you like. You can make yourself look like any other species on the island and can make hybrids.</p>
+</div>
+<div id="Refractaway" class="Outset" onclick="Click('Refractaway',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Refractaway</h4> 1 point
+<img src="Pictures/Refractaway.png" width="300px">
+<p>You will no longer have a refractory period. So you can have as much sex as you want.</p>
+</div>
+<div id="Public-Fun" class="Outset" onclick="Click('Public-Fun',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Public-Fun</h4> 1 point
+<img src="Pictures/Public-Fun.png" width="300px">
+<p>Others will not mind if you have sex in public and will act normaly arround you and your partner.</p>
+</div>
+<div id="Control-Fertility" class="Outset" onclick="Click('Control-Fertility',[''], 1, [], ['With-pregnancy'], [''])"><h4 style="margin: 5px;">Control-Fertility</h4> 1 point
+<img src="Pictures/Control-Fertility.png" width="300px">
+<p>You can control how likley you are to become or get someone else pregnant, from 0% to 100% regardless of any contaceptives in use.</p>
+</div>
+<div id="Easy-Pregnancy" class="Outset" onclick="Click('Easy-Pregnancy',[''], 1, [], ['With-pregnancy'], [''])"><h4 style="margin: 5px;">Easy-Pregnancy</h4> 1 point
+<img src="Pictures/Easy-Pregnancy.png" width="300px">
+<p>If you get pregnant there will be no down sides and birth will occur only 3 months after conseption and will feel plesurable.</p>
+</div>
+<div id="Oviposition" class="Outset" onclick="Click('Oviposition',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Oviposition</h4> 1 point
+<img src="Pictures/Oviposition.png" width="300px">
+<p>You will no longer have a menstrual cycle and will instead lay eggs every month and durring child birth. Doing so will feel plesurable.</p>
+</div>
+<div id="Stretchy" class="Outset" onclick="Click('Stretchy',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Stretchy</h4> 1 point
+<img src="Pictures/Stretchy.png" width="300px">
+<p>No matter gow gifted you or your partner may be it will always fit and be and return to optimal tightness.</p>
+</div>
+<div id="Lactation" class="Outset" onclick="Click('Lactation',['Growth'], 1, [-2], [''], [''])"><h4 style="margin: 5px;">Lactation</h4> 1 point
+<img src="Pictures/Lactation.png" width="300px">
+<p>You and anyone who consents to it now produce an endless amount of milk constantly with no displesure.</p>
+</div>
+<div id="Sex-Ray-Vision" class="Outset" onclick="Click('Sex-Ray-Vision',[''], 1, [], [''], ['No'])"><h4 style="margin: 5px;">Sex-Ray-Vision</h4> 1 point
+<img src="Pictures/Sex-Ray-Vision.png" width="300px">
+<p>You can now see the inside of people you have sex with like shown in the picture above.</p>
+</div>
+<div id="Cumflation" class="Outset" onclick="Click('Cumflation',[''], 1, [], [''], ['No','Dry'])"><h4 style="margin: 5px;">Cumflation</h4> 1 point
+<img src="Pictures/Cumflation.png" width="300px">
+<p>No matter how much cum is shot into someone it will always cause inflation.</p>
+</div>
+<div id="Cum-Fountain" class="Outset" onclick="Click('Cum-Fountain',[''], 1, [], [''], ['Dry'])"><h4 style="margin: 5px;">Cum-Fountain</h4> 1 point
+<img src="Pictures/Cum-Fountain.png" width="300px">
+<p>You and anyone who consents to it can now chose the amount of cum produced.</p>
+</div>
+<div id="The-What" class="Outset" onclick="Click('The-What',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">The-What</h4> 1 point
+<img src="Pictures/The-What.png" width="300px">
+<p>You can decide weather your dick and breasts can be seen under your clothes.</p>
+</div>
+<div id="Flexible" class="Outset" onclick="Click('Flexible',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Flexible</h4> 1 point
+<img src="Pictures/Flexible.png" width="300px">
+<p>You are now Flexible enough to suck your own dick or lick your pussy if you wanted to.</p>
+</div>
+<br><br>
+You've used up all your points and still want more?<br>
+Then you can take some drabacks to get some more points.<br><br>
+<div id="Free-Use" class="Outset" onclick="Click('Free-Use',[''], -2, [], ['Consentual'], ['No'])"><h4 style="margin: 5px;">Free-Use</h4> +2 points
+<img src="Pictures/Free-Use.png" width="300px">
+<p>Everyone will always expect you to be ready to take it no matter when or where. </p>
+</div>
+<div id="Always-Ready" class="Outset" onclick="Click('Always-Ready',[''], -2, [], [''], [''])"><h4 style="margin: 5px;">Always-Ready</h4> +2 points
+<img src="Pictures/Always-Ready.png" width="300px">
+<p>No matter the situation you will always be ready. If you have a dick it will always be hard and if you have a vagina it will always be wet.</p>
+</div>
+<div id="Inconsevable" class="Outset" onclick="Click('Inconsevable',[''], -2, [], [''], [''])"><h4 style="margin: 5px;">Inconsevable</h4> +2 points
+<img src="Pictures/Inconsevable.png" width="300px">
+<p>You will often find yourself in embarasing situations. Accedentaly going into the wrong bathroom or falling onto someones face.</p>
+</div>
+<div id="In-Consevable" class="Outset" onclick="Click('In-Consevable',[''], -1, [], [''], ['Control-Fertility','Easy-Pregnancy','Safe-Non-Consentual','With-pregnancy'])"><h4 style="margin: 5px;">In-Consevable</h4> +1 points
+<img src="Pictures/In-Consevable.png" width="300px">
+<p>No matter what happens you can NOT get pregnant or get someone pregnant. Might be seen as a perk by some.</p>
+</div>
+<div id="Very-Consevable" class="Outset" onclick="Click('Very-Consevable',[''], -1, [], ['With-pregnancy'], ['Control-Fertility'])"><h4 style="margin: 5px;">Very-Consevable</h4> +1 points
+<img src="Pictures/Very-Consevable.png" width="300px">
+<p>No matter what happens you can WILL get pregnant or get someone pregnant. No matter what kind of birth control is used or whitch hole is used.</p>
+</div>
+<div id="Dry" class="Outset" onclick="Click('Dry',[''], -2, [], [''], ['Cumflation','Cum-Fountain'])"><h4 style="margin: 5px;">Dry</h4> +2 points
+<img src="Pictures/Dry.png" width="300px">
+<p>No cum will ever be produced by you, no matter how hard you orgasm. You can still get pregnant if you have a vagina.</p>
+</div>
+<div id="Underwhere" class="Outset" onclick="Click('Underwhere',[''], -1, [], [''], [''])"><h4 style="margin: 5px;">Underwhere</h4> +1 points
+<img src="Pictures/Underwhere.png" width="300px">
+<p>You can never wear underwear again. Even if you put it on it will dissapear.</p>
+</div>
+<div id="Heat" class="Outset" onclick="Click('Heat',[''], -4, [], [''], [''])"><h4 style="margin: 5px;">Heat</h4> +4 points
+<img src="Pictures/Heat.png" width="300px">
+<p>Once a month you will go in to heat and will try to fuck anything and anyone you see.</p>
+</div>
+<div id="Growth" class="Outset" onclick="Click('Growth',[''], -2, [], ['Lactation'], [''])"><h4 style="margin: 5px;">Growth</h4> +2 points
+<img src="Pictures/Growth.png" width="300px">
+<p>Your breasts will grow with the amount of milk in them. Once they reach the maximum size milk will leak out on its own.</p>
+</div>
+<div id="Concentration" class="Outset" onclick="Click('Concentration',[''], -4, [], ['Lactation'], [''])"><h4 style="margin: 5px;">Concentration</h4> +4 points
+<img src="Pictures/Concentration.png" width="300px">
+<p>You can't concentrate on anything unless you are being stiulated. How you do it is not important.</p>
+</div>
+
+</center>
+<script type="text/javascript" src="Island.js"></script>
+</body>
+</html>

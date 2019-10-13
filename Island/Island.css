@@ -1,0 +1,38 @@
+/*
+Material design colors
+https://material.io/design/color/#tools-for-picking-colors
+*/
+body {
+	background-color: #E8F5E9; /*Green 50*/
+}
+.title {
+	font-size: 60px;
+}
+.Outset {
+	display: inline-block;
+	width: 310px;
+	background-color: #66BB6A; /*Green 400*/
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+.Inset {
+	display: inline-block;
+	width: 300px;
+	background-color: #66BB6A; /*Green 400*/
+	border: 5px solid #AEEA00; /*Lime A700*/
+	margin-bottom: 5px;
+}
+div.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70px;
+    border: 3px solid #66BB6A;
+    background-color: #1B5E20;
+	color: white;
+	text-align: center;
+}
+p {
+	width: 300px;
+}
