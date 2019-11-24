@@ -54,6 +54,20 @@ function Click(a, b, c, d, e, f) {
 	}
 	document.getElementById("points").innerHTML = x + " points";
 }
+
+function End() {
+	var o = document.getElementsByClassName('Inset');
+	document.getElementById("end").innerHTML = "END<br><br>";
+	for(var i = 0; i < o.length; i++) {
+		document.getElementById("end").innerHTML += o[i].id + "<br>";
+	}
+}
+
+
+
+
+
+
 /*
 a - the item the user clicked on
 b - the array of items that need to be unselected

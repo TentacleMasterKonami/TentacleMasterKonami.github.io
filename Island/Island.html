@@ -15,6 +15,7 @@ Well then we should fill out a new form.<br><br>
 Here we go then.<br><br>
 The first thing you need to do is pick what kind of Island you want it to be.<br>
 If you select multiple types then you decide how they mix and in what proportions they're in.<br><br>
+<div id="Type:" class="Inset" style="display:none">type</div>
 <div id="Desert" class="Outset" onclick="Click('Desert',[''], -1, [], [''], [''])"><h4 style="margin: 5px;">Desert</h4> +1 point
 <p>A stereotypical desert island. Nothing but sand and a few dead shrubs. Finding water might be challenge and the heat alone can kill you.</p>
 </div>
@@ -36,6 +37,7 @@ If you select multiple types then you decide how they mix and in what proportion
 <br><br>
 Now that you know what type of island you want lets decide how big the island will be.<br>
 If you have a lot of types a Tiny island might not work well.<br><br>
+<div id="<br>Size:" class="Inset" style="display:none">size</div>
 <div id="Tiny" class="Outset" onclick="Click('Tiny',['Small','Medium','Large'], -5, [-2,0,-1], [''], [''])"><h4 style="margin: 5px;">Tiny</h4> +5 points
 <p>An exeptionaly small island. Between 1Km<sup>2</sup> and 10Km<sup>2</sup>. Living here could be quite a challenge.</p>
 </div>
@@ -49,8 +51,9 @@ If you have a lot of types a Tiny island might not work well.<br><br>
 <p>The biggest of the islands. With a size of 10&nbsp000Km<sup>2</sup> and up you could make it larger then the continents on earth.</p>
 </div>
 <br><br>
-Now thaat we know this we can decide how easy survival will be on the island.
+Now that we know this we can decide how easy survival will be on the island.
 <br><br>
+<div id="<br>Benefit:" class="Inset" style="display:none">Benefit</div>
 <div id="Drink-and-Eat" class="Outset" onclick="Click('Drink-and-Eat',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Drink-and-Eat</h4> 1 point
 <img src="Pictures/Drink-and-Eat.jpg" width="300px">
 <p>Water and food will not be an issue with this option, as you will be able to find them easaly.</p>
@@ -67,6 +70,7 @@ Now thaat we know this we can decide how easy survival will be on the island.
 Now you get to pick what other races will inhabit the island.<br>
 You get to decide in what proportions and locations these races are in.<br>
 Remember if you have a smaller island it could get cramped.<br><br>
+<div id="<br>Races:" class="Inset" style="display:none">Races</div>
 <div id="Humans" class="Outset" onclick="Click('Humans',[''], 0, [], [''], [''])"><h4 style="margin: 5px;">Humans</h4> FREE
 <img src="Pictures/Humans.jpg" width="300px">
 <p>The normal race of humans. I'm sure you're familiar with them since you are human. You can decide their complection and the language they speak.</p>
@@ -137,6 +141,7 @@ Remember if you have a smaller island it could get cramped.<br><br>
 </div>
 <br><br>
 Now you have to chose how compatible the other species are with you.<br><br>
+<div id="<br>Compatibility:" class="Inset" style="display:none">Compatibility</div>
 <div id="No" class="Outset" onclick="Click('No',['Yes','With-pregnancy'], -2, [0,0], [''], ['Consentual','Non-Consentual','Safe-Non-Consentual','Pregnant','Cumflation','Sex-Ray-Vision','Free-Use'])"><h4 style="margin: 5px;">No</h4> +2 points
 <p>There is no compatibility between species. There is no way for intercourse to occur.</p>
 </div>
@@ -148,6 +153,7 @@ Now you have to chose how compatible the other species are with you.<br><br>
 </div>
 <br><br>
 What kind of sex do the species on the island enjoy most.<br><br>
+<div id="<br>Kind of sex:" class="Inset" style="display:none">Kind of sex</div>
 <div id="Consentual" class="Outset" onclick="Click('Consentual',['Non-Consentual','Safe-Non-Consentual','Free-Use'], -1, [1,0,-2], [''], ['No'])"><h4 style="margin: 5px;">Consentual</h4> +1 point
 <p>The inhabitants of the island ask for consent before inisiating sex and will expect you to do the same.</p>
 </div>
@@ -159,7 +165,8 @@ What kind of sex do the species on the island enjoy most.<br><br>
 </div>
 <br><br>
 Since you will be new on the island the other species might not accept you at first. <br>
-So here you can choose how fas they accept you.<br><br>
+So here you can choose how fast they accept you.<br><br>
+<div id="<br>Acception:" class="Inset" style="display:none">Acception</div>
 <div id="Instant" class="Outset" onclick="Click('Instant',['Over-Time','Pregnant'], 1, [0,-1], [''], [''])"><h4 style="margin: 5px;">Instant</h4> 1 point
 <img src="Pictures/Instant.jpg" width="300px">
 <p>The other species on the island will accept you immediately.</p>
@@ -173,6 +180,7 @@ So here you can choose how fas they accept you.<br><br>
 <p>The others will only accept you afer you carry a child with one of their members. This needs to be done at least once per species.</p>
 </div>
 <br><br>
+<div id="<br>Bonus:" class="Inset" style="display:none">Bonus</div>
 Now it's time for you to select some perks with the points you have.<br><br>
 <div id="Invincibility" class="Outset" onclick="Click('Invincibility',[''], 1, [], [''], [''])"><h4 style="margin: 5px;">Invincibility</h4> 1 point
 <img src="Pictures/Invincibility.PNG" width="300px">
@@ -265,6 +273,7 @@ Now it's time for you to select some perks with the points you have.<br><br>
 <br><br>
 You've used up all your points and still want more?<br>
 Then you can take some drabacks to get some more points.<br><br>
+<div id="<br>Drawback:" class="Inset" style="display:none">Drawback</div>
 <div id="Free-Use" class="Outset" onclick="Click('Free-Use',[''], -2, [], ['Consentual'], ['No'])"><h4 style="margin: 5px;">Free-Use</h4> +2 points
 <img src="Pictures/Free-Use.jpg" width="300px">
 <p>Everyone will always expect you to be ready to take it no matter when or where. </p>
@@ -305,7 +314,8 @@ Then you can take some drabacks to get some more points.<br><br>
 <img src="Pictures/Concentration.PNG" width="300px">
 <p>You can't concentrate on anything unless you are being stiulated. How you do it is not important.</p>
 </div>
-
+<br><br>
+<div id="end" class="Outset" onclick="End()">END</div>
 </center>
 <script type="text/javascript" src="Island.js"></script>
 </body>
