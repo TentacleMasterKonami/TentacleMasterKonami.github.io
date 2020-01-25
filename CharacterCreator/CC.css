@@ -1,0 +1,71 @@
+body {
+	background-image: linear-gradient(#AAFFFF, #AAAAFF);
+}
+p {
+	font-family: roboto, sans-serif;
+	text-align: -webkit-center;
+	font-size: 1.2em;
+}
+.Outset {
+	background-color: #DDD;
+	display: inline-block;
+	padding: 3px 5px;
+	cursor: pointer;
+	margin: 5px;
+}
+.Inset {
+	background-color: #DDD;
+	display: inline-block;
+	padding: 1px 3px;
+	cursor: pointer;
+	margin: 5px;
+	border: 2px solid #FFF;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.9;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+.Body {
+	padding: 0px 30px;
+	text-align: -webkit-center
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*EOF*/

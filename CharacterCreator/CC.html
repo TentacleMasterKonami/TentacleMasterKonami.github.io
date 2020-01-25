@@ -1,0 +1,345 @@
+<html>
+<head>
+<title>CharacterCreator</title>
+<link rel="stylesheet" type="text/css" href="CC.css">
+</head>
+<body>
+<div style="display: none;" id="points"></div>
+<!-- Head -->
+<div class="Body"><p>Welcome to <b>CharacterCreator</b> where we turn you into a character worthy of being an Anime protagonist.</p></div>
+<br>
+<!-- Gender -->
+<div data-return="<b>Gender</b>" id="Gender-select" class="Inset" style="display: none;"></div>
+<div class="Body"><p><b>Gender</b><br>
+Choose as many parts to have fun with as you like.<br>
+<div data-return="Boobs" id="Boobs" class="Outset" onclick="Click('Boobs', [''], 0, [], [''], ['']); Selector('Boobs', 'boob-select')">
+<b>Boobs</b>
+<br><img src="PIC/Boobs.webp" alt="Boobs" width="300px;"><br>
+You can choose later how big they are.
+</div>
+
+<div data-return="Vagina" id="Vagina" class="Outset" onclick="Click('Vagina', [''], 0, [], [''], [''])">
+<b>Vagina</b>
+<br><img src="PIC/Vagina.webp" alt="Vagina" width="300px;"><br>
+You can choose how deep it goes.
+</div>
+
+<div data-return="Penis" id="Penis" class="Outset" onclick="Click('Penis', ['Human','Dog','Horse','Tentacle'], 0, [0,0,0,0], [''], ['']); Selector('Penis', 'penis-select')">
+<b>Penis</b>
+<br><img src="PIC/Penis.jpg" alt="Penis" width="300px;"><br>
+You can choose later how big it is.
+</div>
+
+<div data-return="Balls" id="Balls" class="Outset" onclick="Click('Balls', [''], 0, [], [''], [''])">
+<b>Balls</b>
+<br><img src="PIC/Balls.webp" alt="Balls" width="300px;"><br>
+If kept unselected the balls will be internal.
+</div>
+
+<div data-return="Anus" id="Anus" class="Outset" onclick="Click('Anus', [''], 0, [], [''], [''])">
+<b>Anus</b>
+<br><img src="PIC/Anus.jpg" alt="Anus" width="300px;"><br>
+You get to choose specifics.
+</div>
+
+</p></div>
+<!-- Body -->
+<div data-return="<br><b>Body-type</b>" id="body-type-select" class="Inset" style="display: none;"></div>
+<div class="Body"><p><b>Body</b><br>
+Choose one body type.<br>
+
+<div data-return="Loli" id="Loli" class="Outset" onclick="Click('Loli', ['Skinny','Fit','Thicc','Chubby'], 0, [0,0,0], [''], [''])">
+<b>Loli</b>
+<br><img src="PIC/Loli.webp" alt="Loli" width="300px;"><br>
+Small, but <b>legal</b>.
+</div>
+
+<div data-return="Skinny" id="Skinny" class="Outset" onclick="Click('Skinny', ['Loli','Fit','Thicc','Chubby'], 0, [0,0,0], [''], [''])">
+<b>Skinny</b>
+<br><img src="PIC/Skinny.webp" alt="Skinny" width="300px;"><br><br>
+</div>
+
+<div data-return="Fit" id="Fit" class="Outset" onclick="Click('Fit', ['Loli','Skinny','Thicc','Chubby'], 0, [0,0,0], [''], [''])">
+<b>Fit</b>
+<br><img src="PIC/Fit.webp" alt="Fit" width="300px;"><br><br>
+</div>
+
+<div data-return="Thicc" id="Thicc" class="Outset" onclick="Click('Thicc', ['Loli','Skinny','Fit','Chubby'], 0, [0,0,0], [''], [''])">
+<b>Thicc</b>
+<br><img src="PIC/Thicc.webp" alt="Thicc" width="300px;"><br><br>
+</div>
+
+<div data-return="Chubby" id="Chubby" class="Outset" onclick="Click('Chubby', ['Loli','Skinny','Fit','Thicc'], 0, [0,0,0], [''], [''])">
+<b>Chubby</b>
+<br><img src="PIC/Chubby.jpg" alt="Chubby" width="300px;"><br><br>
+</div>
+
+</p></div>
+<!-- Height -->
+<div data-return="<br><b>Height</b>" id="Height-select" class="Inset" style="display: none;"></div>
+<div class="Body"><p><b>Height</b></p>
+<p id="HeightD">185cm - 6ft 1in</p>
+<div data-return="185cm - 6ft 1in" id="Height" style="display: none;" class="Inset"></div>
+<input type="range" min="150" max="220" value="185" class="slider" id="HeightS">
+</div>
+<!-- Hair -->
+<div data-return="<br><b>Hair-color</b>" id="hair-color-select" class="Inset" style="display: none;"></div>
+<div class="Body"><p><b>Hair</b><br>
+Choose one hair color.<br>
+<div data-return="Black-Hair" id="Black-Hair" class="Outset" onclick="Click('Black-Hair', ['Brown-Hair','Yellow-Hair','Red-Hair','Green-Hair','Blue-Hair','White-Hair'], 0, [0,0,0,0,0,0], [''], [''])">
+<b>Black-Hair</b>
+<br><img src="PIC/Black-Hair.jpg" alt="Black-Hair" width="300px;"><br>
+
+</div>
+<div data-return="Brown-Hair" id="Brown-Hair" class="Outset" onclick="Click('Brown-Hair', ['Black-Hair','Yellow-Hair','Red-Hair','Green-Hair','Blue-Hair','White-Hair'], 0, [0,0,0,0,0,0], [''], [''])">
+<b>Brown-Hair</b>
+<br><img src="PIC/Brown-Hair.webp" alt="Brown-Hair" width="300px;"><br>
+
+</div>
+<div data-return="Yellow-Hair" id="Yellow-Hair" class="Outset" onclick="Click('Yellow-Hair', ['Brown-Hair','Black-Hair','Red-Hair','Green-Hair','Blue-Hair','White-Hair'], 0, [0,0,0,0,0,0], [''], [''])">
+<b>Yellow-Hair</b>
+<br><img src="PIC/Yellow-Hair.webp" alt="Yellow-Hair" width="300px;"><br>
+
+</div>
+<div data-return="Red-Hair" id="Red-Hair" class="Outset" onclick="Click('Red-Hair', ['Brown-Hair','Yellow-Hair','Black-Hair','Green-Hair','Blue-Hair','White-Hair'], 0, [0,0,0,0,0,0], [''], [''])">
+<b>Red-Hair</b>
+<br><img src="PIC/Red-Hair.webp" alt="Red-Hair" width="300px;"><br>
+
+</div>
+<div data-return="Green-Hair" id="Green-Hair" class="Outset" onclick="Click('Green-Hair', ['Brown-Hair','Yellow-Hair','Red-Hair','Black-Hair','Blue-Hair','White-Hair'], 0, [0,0,0,0,0,0], [''], [''])">
+<b>Green-Hair</b>
+<br><img src="PIC/Green-Hair.jpg" alt="Green-Hair" width="300px;"><br>
+
+</div>
+<div data-return="Blue-Hair" id="Blue-Hair" class="Outset" onclick="Click('Blue-Hair', ['Brown-Hair','Yellow-Hair','Red-Hair','Green-Hair','Black-Hair','White-Hair'], 0, [0,0,0,0,0,0], [''], [''])">
+<b>Blue-Hair</b>
+<br><img src="PIC/Blue-Hair.webp" alt="Blue-Hair" width="300px;"><br>
+
+</div>
+<div data-return="White-Hair" id="White-Hair" class="Outset" onclick="Click('White-Hair', ['Brown-Hair','Yellow-Hair','Red-Hair','Green-Hair','Blue-Hair','Black-Hair'], 0, [0,0,0,0,0,0], [''], [''])">
+<b>White-Hair</b>
+<br><img src="PIC/White-Hair.webp" alt="White-Hair" width="300px;"><br>
+
+</div>
+
+</p></div>
+<!-- Eye -->
+<div data-return="<br><b>Eye-color</b>" id="eye-color-select" class="Inset" style="display: none;"></div>
+<div class="Body"><p><b>Eye</b><br>
+Choose one eye color.<br>
+<div data-return="Black-eyes" id="Black-eyes" class="Outset" onclick="Click('Black-eyes', ['Brown-eyes','Yellow-eyes','Red-eyes','Green-eyes','Blue-eyes'], 0, [0,0,0,0,0], [''], [''])">
+<b>Black-eyes</b>
+<br><img src="PIC/Black-eyes.webp" alt="Black-eyes" width="300px;"><br>
+
+</div>
+<div data-return="Brown-eyes" id="Brown-eyes" class="Outset" onclick="Click('Brown-eyes', ['Black-eyes','Yellow-eyes','Red-eyes','Green-eyes','Blue-eyes'], 0, [0,0,0,0,0], [''], [''])">
+<b>Brown-eyes</b>
+<br><img src="PIC/Brown-eyes.webp" alt="Brown-eyes" width="300px;"><br>
+
+</div>
+<div data-return="Yellow-eyes" id="Yellow-eyes" class="Outset" onclick="Click('Yellow-eyes', ['Brown-eyes','Black-eyes','Red-eyes','Green-eyes','Blue-eyes'], 0, [0,0,0,0,0], [''], [''])">
+<b>Yellow-eyes</b>
+<br><img src="PIC/Yellow-eyes.webp" alt="Yellow-eyes" width="300px;"><br>
+
+</div>
+<div data-return="Red-eyes" id="Red-eyes" class="Outset" onclick="Click('Red-eyes', ['Brown-eyes','Yellow-eyes','Black-eyes','Green-eyes','Blue-eyes'], 0, [0,0,0,0,0], [''], [''])">
+<b>Red-eyes</b>
+<br><img src="PIC/Red-eyes.webp" alt="Red-eyes" width="300px;"><br>
+
+</div>
+<div data-return="Green-eyes" id="Green-eyes" class="Outset" onclick="Click('Green-eyes', ['Brown-eyes','Yellow-eyes','Red-eyes','Black-eyes','Blue-eyes'], 0, [0,0,0,0,0], [''], [''])">
+<b>Green-eyes</b>
+<br><img src="PIC/Green-eyes.webp" alt="Green-eyes" width="300px;"><br>
+
+</div>
+<div data-return="Blue-eyes" id="Blue-eyes" class="Outset" onclick="Click('Blue-eyes', ['Brown-eyes','Yellow-eyes','Red-eyes','Green-eyes','Black-eyes'], 0, [0,0,0,0,0], [''], [''])">
+<b>Blue-eyes</b>
+<br><img src="PIC/Blue-eyes.webp" alt="Blue-eyes" width="300px;"><br>
+
+</div>
+
+<p>And one eye shape</p>
+<div data-return="<br><b>Eye-shape</b>" id="eye-shape-select" class="Inset" style="display: none;"></div>
+<div data-return="Round" id="Round" class="Outset" onclick="Click('Round', ['Cat','Star','Heart'], 0, [0,0,0], [''], [''])">
+<b>Round</b>
+<br><img src="PIC/Round.jpg" alt="Round" width="300px;"><br>
+
+</div>
+<div data-return="Cat" id="Cat" class="Outset" onclick="Click('Cat', ['Round','Star','Heart'], 0, [0,0,0], [''], [''])">
+<b>Cat</b>
+<br><img src="PIC/Cat.jpg" alt="Cat" width="300px;"><br>
+
+</div>
+<div data-return="Star" id="Star" class="Outset" onclick="Click('Star', ['Cat','Round','Heart'], 0, [0,0,0], [''], [''])">
+<b>Star</b>
+<br><img src="PIC/Star.jpg" alt="Star" width="300px;"><br>
+
+</div>
+<div data-return="Heart" id="Heart" class="Outset" onclick="Click('Heart', ['Cat','Star','Round'], 0, [0,0,0], [''], [''])">
+<b>Heart</b>
+<br><img src="PIC/Heart.jpg" alt="Heart" width="300px;"><br>
+
+</div>
+</p></div>
+<!-- Boobs -->
+<div data-return="<br><b>Boobs</b>" id="boob-select" class="Outset" style="display: none;"></div>
+<div class="Body"><p><b>Boobs</b><br>
+Select the boob size.<br></p>
+<img src="PIC/Size-chart.jpg" alt="Size-chart" width="90%">
+<p id="SizeD">C-cup</p>
+<div data-return="C-cup" id="Size" style="display: none;" class="Outset"></div>
+<input type="range" min="1" max="8" value="4" class="slider" id="SizeS">
+</div>
+<!-- But -->
+<div data-return="<br><b>But</b>" id="body-select" class="Inset" style="display: none;"></div>
+<div class="Body"><p><b>But</b><br>
+Select one but size.<br></p>
+<div data-return="Barely-There" id="Barely-There" class="Outset" onclick="Click('Barely-There', ['Small','Thiccc','Huge'], 0, [0,0,0], [''], [''])">
+<b>Barely-There</b>
+<br><img src="PIC/Barely-There.webp" alt="Barely-There" width="300px;"><br>
+
+</div>
+<div data-return="Small" id="Small" class="Outset" onclick="Click('Small', ['Barely-There','Thiccc','Huge'], 0, [0,0,0], [''], [''])">
+<b>Small</b>
+<br><img src="PIC/Small.webp" alt="Small" width="300px;"><br>
+
+</div>
+<div data-return="Thiccc" id="Thiccc" class="Outset" onclick="Click('Thiccc', ['Small','Barely-There','Huge'], 0, [0,0,0], [''], [''])">
+<b>Thiccc</b>
+<br><img src="PIC/Thiccc.webp" alt="Thiccc" width="300px;"><br>
+
+</div>
+<div data-return="Huge" id="Huge" class="Outset" onclick="Click('Huge', ['Small','Thiccc','Barely-There'], 0, [0,0,0], [''], [''])">
+<b>Huge</b>
+<br><img src="PIC/Huge.jpg" alt="Huge" width="300px;"><br>
+
+</div>
+</p></div>
+<!-- Penis -->
+<div data-return="<br><b>Penis</b>" id="penis-select" class="Outset" style="display: none;"></div>
+<div class="Body"><p><b>Penis</b><br>
+Select penis size.<br></p>
+<p id="LengthD">15cm - 6in</p>
+<div data-return="15cm - 6in" id="Length" style="display: none;" class="Outset"></div>
+<input type="range" min="5" max="50" value="15" class="slider" id="LengthS">
+
+<p>And one penis type.</p>
+<div data-return="Human" id="Human" class="Outset" onclick="Click('Human', ['Horse','Dog','Tentacle'], 0, [0,0,0], ['Penis'], [''])">
+<b>Human</b>
+<br><img src="PIC/Human.webp" alt="Human" width="300px;"><br>
+Standard human penis.
+</div>
+<div data-return="Horse" id="Horse" class="Outset" onclick="Click('Horse', ['Human','Dog','Tentacle'], 0, [0,0,0], ['Penis'], [''])">
+<b>Horse</b>
+<br><img src="PIC/Horse.PNG" alt="Horse" width="300px;"><br>
+A horse penis like shown in the picture.
+</div>
+<div data-return="Dog" id="Dog" class="Outset" onclick="Click('Dog', ['Horse','Human','Tentacle'], 0, [0,0,0], ['Penis'], [''])">
+<b>Dog</b>
+<br><img src="PIC/Dog.jpg" alt="Dog" width="300px;"><br>
+Dog penis with knot.
+</div>
+<div data-return="Tentacle" id="Tentacle" class="Outset" onclick="Click('Tentacle', ['Horse','Dog','Human'], 0, [0,0,0], ['Penis'], [''])">
+<b>Tentacle</b>
+<br><img src="PIC/Tentacle.PNG" alt="Tentacle" width="300px;"><br>
+A fully controllable tentacle.
+</div>
+</div>
+<!-- Extra -->
+<div data-return="<br><b>Extra</b>" id="extra-select" class="Inset" style="display: none;"></div>
+<div class="Body"><p><b>Extra</b><br>
+Select as many extras as you want size.<br></p>
+<div data-return="Ears" id="Ears" class="Outset" onclick="Click('Ears', ['Horns'], 0, [0], [''], [''])">
+<b style="color: red;">Ears</b>
+<br><img src="PIC/Ears.png" alt="Ears" width="300px;"><br>
+Can't select with <b style="color: red;">Horns</b>.
+</div>
+<div data-return="Tail" id="Tail" class="Outset" onclick="Click('Tail', [''], 0, [], [''], [''])">
+<b>Tail</b>
+<br><img src="PIC/Tail.webp" alt="Tail" width="300px;"><br>
+Animal tail.
+</div>
+<div data-return="Horns" id="Horns" class="Outset" onclick="Click('Horns', ['Ears'], 0, [0], [''], [''])">
+<b style="color: red;">Horns</b>
+<br><img src="PIC/Horns.jpg" alt="Horns" width="300px;"><br>
+Can't select with <b style="color: red;">Ears</b>.
+</div>
+<div data-return="Halo" id="Halo" class="Outset" onclick="Click('Halo', [''], 0, [], [''], [''])">
+<b>Halo</b>
+<br><img src="PIC/Halo.jpg" alt="Halo" width="300px;"><br>
+An angels halo.
+</div>
+<div data-return="Wings" id="Wings" class="Outset" onclick="Click('Wings', [''], 0, [], [''], [''])">
+<b>Wings</b>
+<br><img src="PIC/Wings.webp" alt="Wings" width="300px;"><br>
+Wings of angels, demons, dragons, ...
+</div>
+<div data-return="Tattoo" id="Tattoo" class="Outset" onclick="Click('Tattoo', [''], 0, [], [''], [''])">
+<b>Tattoo</b>
+<br><img src="PIC/Tattoo.webp" alt="Tattoo" width="300px;"><br>
+A glowing magic tattoo anywhere on the body.
+</div>
+</div>
+<!-- Clothes -->
+<div data-return="<br><b>Clothes</b>" id="Clothes-select" class="Inset" style="display: none;"></div>
+<div class="Body"><p><b>Clothes</b><br>
+Select one clothing type, the specifics are up to you.<br></p>
+<div data-return="None" id="None" class="Outset" onclick="Click('None', ['Just-a-collar','Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<b>None</b>
+<br><img src="PIC/None.webp" alt="None" width="300px;"><br>
+No clothes at all.
+</div>
+<div data-return="Just-a-collar" id="Just-a-collar" class="Outset" onclick="Click('Just-a-collar', ['None','Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<b>Just-a-collar</b>
+<br><img src="PIC/Just-a-collar.webp" alt="Just-a-collar" width="300px;"><br>
+For the pet to wear.
+</div>
+<div data-return="Suit" id="Suit" class="Outset" onclick="Click('Suit', ['Just-a-collar','None','Sailor-uniform','Dress','Swimsuit','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<b>Suit</b>
+<br><img src="PIC/Suit.webp" alt="Suit" width="300px;"><br>
+A business suit for serious occasion.
+</div>
+<div data-return="Sailor-uniform" id="Sailor-uniform" class="Outset" onclick="Click('Sailor-uniform', ['Just-a-collar','Suit','None','Dress','Swimsuit','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<b>Sailor-uniform</b>
+<br><img src="PIC/Sailor-uniform.jpg" alt="Sailor-uniform" width="300px;"><br>
+A sailor school uniform.
+</div>
+<div data-return="Dress" id="Dress" class="Outset" onclick="Click('Dress', ['Just-a-collar','Suit','Sailor-uniform','None','Swimsuit','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<b>Dress</b>
+<br><img src="PIC/Dress.webp" alt="Dress" width="300px;"><br>
+Long dress for parties, or concealed toys.
+</div>
+<div data-return="Swimsuit" id="Swimsuit" class="Outset" onclick="Click('Swimsuit', ['Just-a-collar','Suit','Sailor-uniform','Dress','None','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<b>Swimsuit</b>
+<br><img src="PIC/Swimsuit.webp" alt="Swimsuit" width="300px;"><br>
+Regular one piece swimsuit.
+</div>
+<div data-return="Bodysuit" id="Bodysuit" class="Outset" onclick="Click('Bodysuit', ['Just-a-collar','Suit','Sailor-uniform','Dress','Swimsuit','None','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<b>Bodysuit</b>
+<br><img src="PIC/Bodysuit.webp" alt="Bodysuit" width="300px;"><br>
+Nice and tight, just like it should be.
+</div>
+<div data-return="Tentacle-suit" id="Tentacle-suit" class="Outset" onclick="Click('Tentacle-suit', ['Just-a-collar','Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','None','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<b>Tentacle-suit</b>
+<br><img src="PIC/Tentacle-suit.jpg" alt="Tentacle-suit" width="300px;"><br>
+You choose the design we choose the tentacles.
+</div>
+<div data-return="Bikini" id="Bikini" class="Outset" onclick="Click('Bikini', ['Just-a-collar','Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Tentacle-suit','None','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<b>Bikini</b>
+<br><img src="PIC/Bikini.webp" alt="Bikini" width="300px;"><br>
+Just a normal bikini.
+</div>
+<div data-return="Slut-suit" id="Slut-suit" class="Outset" onclick="Click('Slut-suit', ['Just-a-collar','Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Tentacle-suit','None','Bikini'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<b>Slut-suit</b>
+<br><img src="PIC/Slut-suit.webp" alt="Slut-suit" width="300px;"><br>
+A suit for good little sluts.
+</div>
+</p></div>
+
+<div class="Body">
+<div id="end" class="Outset" onclick="End()"><p><b>Finish</b></p></div>
+</div>
+
+<script type="text/javascript" src="CC.js"></script>
+</body>
+</html>
