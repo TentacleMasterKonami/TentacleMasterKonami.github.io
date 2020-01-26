@@ -245,29 +245,74 @@ Dog penis with knot.
 A fully controllable tentacle.
 </div>
 </div>
-<!-- Extra -->
-<div data-return="<br><b>Extra</b>" id="extra-select" class="Inset" style="display: none;"></div>
-<div class="Body"><p><b>Extra</b><br>
-Select as many extras as you want size.<br></p>
-<div data-return="Ears" id="Ears" class="Outset" onclick="Click('Ears', ['Horns'], 0, [0], [''], [''])">
-<b style="color: red;">Ears</b>
+
+
+
+
+
+
+
+
+<!-- Head accessory -->
+<div data-return="<br><b>Head-accessory</b>" id="Head-accessory" class="Inset" style="display: none;"></div>
+<div class="Body"><p><b>Head accessory</b><br>
+Accessories you can put on your head.<br></p>
+
+<div data-return="Ears" id="Ears" class="Outset" onclick="Click('Ears', [''], 0, [], [''], [''])">
+<b>Ears</b>
 <br><img src="PIC/Ears.png" alt="Ears" width="300px;"><br>
-Animal/elf ears. Can't select with <b style="color: red;">Horns</b>.
+Animal/elf ears.
 </div>
-<div data-return="Tail" id="Tail" class="Outset" onclick="Click('Tail', [''], 0, [], [''], [''])">
-<b>Tail</b>
-<br><img src="PIC/Tail.webp" alt="Tail" width="300px;"><br>
-Animal/demon tail.
-</div>
-<div data-return="Horns" id="Horns" class="Outset" onclick="Click('Horns', ['Ears'], 0, [0], [''], [''])">
-<b style="color: red;">Horns</b>
+<div data-return="Horns" id="Horns" class="Outset" onclick="Click('Horns', [''], 0, [], [''], [''])">
+<b>Horns</b>
 <br><img src="PIC/Horns.jpg" alt="Horns" width="300px;"><br>
-Animal/demon horns. Can't select with <b style="color: red;">Ears</b>.
+Animal/demon horns.
 </div>
 <div data-return="Halo" id="Halo" class="Outset" onclick="Click('Halo', [''], 0, [], [''], [''])">
 <b>Halo</b>
 <br><img src="PIC/Halo.jpg" alt="Halo" width="300px;"><br>
 An angels halo.
+</div>
+<div data-return="Glasses" id="Glasses" class="Outset" onclick="Click('Glasses', [''], 0, [], [''], [''])">
+<b>Glasses</b>
+<br><img src="PIC/Glasses.webp" alt="Glasses" width="300px;"><br>
+You choose the design.
+</div>
+<div data-return="Hat" id="Hat" class="Outset" onclick="Click('Hat', [''], 0, [], [''], [''])">
+<b>Hat</b>
+<br><img src="PIC/Hat.webp" alt="Hat" width="300px;"><br>
+You choose the design.
+</div>
+
+<!-- Body accessory -->
+<div data-return="<br><b>Body-accessory</b>" id="Body-accessory" class="Inset" style="display: none;"></div>
+<div class="Body"><p><b>Body accessory</b><br>
+Accessories you can put on your body and arms.<br></p>
+
+<div data-return="Gloves" id="Gloves" class="Outset" onclick="Click('Gloves', ['Long-Gloves'], 0, [0], [''], [''])">
+<b style="color: blue;">Gloves</b>
+<br><img src="PIC/Gloves.jpg" alt="Gloves" width="300px;"><br>
+Gloves to keep you warm in the cold.
+</div>
+<div data-return="Long-Gloves" id="Long-Gloves" class="Outset" onclick="Click('Long-Gloves', ['Gloves'], 0, [0], [''], [''])">
+<b style="color: blue;">Long-Gloves</b>
+<br><img src="PIC/Long-Gloves.webp" alt="Long-Gloves" width="300px;"><br>
+Gloves to wear when at a party.
+</div>
+<div data-return="Collar" id="Collar" class="Outset" onclick="Click('Collar', ['Collar-with-leash'], 0, [0], [''], [''])">
+<b style="color: red;">Collar</b>
+<br><img src="PIC/Collar.webp" alt="Collar" width="300px;"><br>
+A collar for a pet to wear.
+</div>
+<div data-return="Collar-with-leash" id="Collar-with-leash" class="Outset" onclick="Click('Collar-with-leash', ['Collar'], 0, [0], [''], [''])">
+<b style="color: red;">Collar-with-leash</b>
+<br><img src="PIC/Collar-with-leash.webp" alt="Collar-with-leash" width="300px;"><br>
+A collar with a leash for the extra control.
+</div>
+<div data-return="Tail" id="Tail" class="Outset" onclick="Click('Tail', [''], 0, [], [''], [''])">
+<b>Tail</b>
+<br><img src="PIC/Tail.webp" alt="Tail" width="300px;"><br>
+Animal/demon tail.
 </div>
 <div data-return="Wings" id="Wings" class="Outset" onclick="Click('Wings', [''], 0, [], [''], [''])">
 <b>Wings</b>
@@ -279,62 +324,110 @@ Wings of angels, demons, dragons, ...
 <br><img src="PIC/Tattoo.webp" alt="Tattoo" width="300px;"><br>
 A glowing magic tattoo anywhere on the body.
 </div>
+
+
+<!-- Leg accessory -->
+<div data-return="<br><b>Leg-accessory</b>" id="Leg-accessory" class="Inset" style="display: none;"></div>
+<div class="Body"><p><b>Leg accessory</b><br>
+Accessories you can put on your legs.<br></p>
+
+<div data-return="Socks" id="Socks" class="Outset" onclick="Click('Socks', [''], 0, [], [''], [''])">
+<b>Socks</b>
+<br><img src="PIC/Socks.webp" alt="Socks" width="300px;"><br>
+Regular or knee-high socks.
 </div>
+<div data-return="" id="Thigh-high" class="Outset" onclick="Click('Thigh-high', ['Garter-belt'], 0, [0], [''], [''])">
+<b>Thigh-high</b>
+<br><img src="PIC/Thigh-high.webp" alt="Thigh-high" width="300px;"><br>
+Tights going up to the thighs.
+</div>
+<div data-return="Garter-belt" id="Garter-belt" class="Outset" onclick="Click('Garter-belt', [''], 0, [], ['Thigh-high'], [''])">
+<b>Garter-belt</b>
+<br><img src="PIC/Garter-belt.webp" alt="Garter-belt" width="300px;"><br>
+A belt to keep your thigh-highs in place.
+</div>
+
 <!-- Clothes -->
 <div data-return="<br><b>Clothes</b>" id="Clothes-select" class="Inset" style="display: none;"></div>
 <div class="Body"><p><b>Clothes</b><br>
 Select one clothing type, the specifics are up to you.<br></p>
-<div data-return="None" id="None" class="Outset" onclick="Click('None', ['Just-a-collar','Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
-<b>None</b>
-<br><img src="PIC/None.webp" alt="None" width="300px;"><br>
-No clothes at all.
-</div>
-<div data-return="Just-a-collar" id="Just-a-collar" class="Outset" onclick="Click('Just-a-collar', ['None','Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
-<b>Just-a-collar</b>
-<br><img src="PIC/Just-a-collar.webp" alt="Just-a-collar" width="300px;"><br>
-For the pet to wear.
-</div>
-<div data-return="Suit" id="Suit" class="Outset" onclick="Click('Suit', ['Just-a-collar','None','Sailor-uniform','Dress','Swimsuit','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+
+<div data-return="Suit" id="Suit" class="Outset" onclick="Click('Suit', ['Sailor-uniform','Dress','Swimsuit','Bodysuit','Tentacle-suit','Bikini','Slut-suit','Sleepwear','Police','Nurse','Nun','Bunny-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
 <b>Suit</b>
 <br><img src="PIC/Suit.webp" alt="Suit" width="300px;"><br>
 A business suit for serious occasion.
 </div>
-<div data-return="Sailor-uniform" id="Sailor-uniform" class="Outset" onclick="Click('Sailor-uniform', ['Just-a-collar','Suit','None','Dress','Swimsuit','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<div data-return="Sailor-uniform" id="Sailor-uniform" class="Outset" onclick="Click('Sailor-uniform', ['Suit','Dress','Swimsuit','Bodysuit','Hoodie','Bikini','Slut-suit','Sleepwear','Police','Nurse','Nun','Bunny-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
 <b>Sailor-uniform</b>
 <br><img src="PIC/Sailor-uniform.jpg" alt="Sailor-uniform" width="300px;"><br>
 A sailor school uniform.
 </div>
-<div data-return="Dress" id="Dress" class="Outset" onclick="Click('Dress', ['Just-a-collar','Suit','Sailor-uniform','None','Swimsuit','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<div data-return="Hoodie" id="Hoodie" class="Outset" onclick="Click('Hoodie', ['Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Bikini','Sleepwear','Police','Nurse','Nun','Bunny-suit','Slut-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
+<b>Hoodie</b>
+<br><img src="PIC/Hoodie.webp" alt="Hoodie" width="300px;"><br>
+A hoodie to keep you warm, or hide toys in.
+</div>
+<div data-return="Dress" id="Dress" class="Outset" onclick="Click('Dress', ['Suit','Sailor-uniform','Swimsuit','Bodysuit','Hoodie','Bikini','Slut-suit','Sleepwear','Police','Nurse','Nun','Bunny-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
 <b>Dress</b>
 <br><img src="PIC/Dress.webp" alt="Dress" width="300px;"><br>
 Long dress for parties, or concealed toys.
 </div>
-<div data-return="Swimsuit" id="Swimsuit" class="Outset" onclick="Click('Swimsuit', ['Just-a-collar','Suit','Sailor-uniform','Dress','None','Bodysuit','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<div data-return="Police" id="Police" class="Outset" onclick="Click('Police', ['Suit','Sailor-uniform','Swimsuit','Bodysuit','Hoodie','Bikini','Slut-suit','Sleepwear','Dress','Nurse','Nun','Bunny-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
+<b>Police</b>
+<br><img src="PIC/Police.webp" alt="Police" width="300px;"><br>
+Long dress for parties, or concealed toys.
+</div>
+<div data-return="Nurse" id="Nurse" class="Outset" onclick="Click('Nurse', ['Suit','Sailor-uniform','Swimsuit','Bodysuit','Hoodie','Bikini','Slut-suit','Sleepwear','Police','Dress','Nun','Bunny-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
+<b>Nurse</b>
+<br><img src="PIC/Nurse.jpg" alt="Nurse" width="300px;"><br>
+Long dress for parties, or concealed toys.
+</div>
+<div data-return="Nun" id="Nun" class="Outset" onclick="Click('Nun', ['Suit','Sailor-uniform','Swimsuit','Bodysuit','Hoodie','Bikini','Slut-suit','Sleepwear','Police','Nurse','Dress','Bunny-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
+<b>Nun</b>
+<br><img src="PIC/Nun.webp" alt="Nun" width="300px;"><br>
+Long dress for parties, or concealed toys.
+</div>
+<div data-return="Sleepwear" id="Sleepwear" class="Outset" onclick="Click('Sleepwear', ['Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Hoodie','Bikini','Slut-suit','Police','Nurse','Nun','Bunny-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
+<b>Sleepwear</b>
+<br><img src="PIC/Sleepwear.webp" alt="Sleepwear" width="300px;"><br>
+Clothes you would wear while sleeping.
+</div>
+<div data-return="Swimsuit" id="Swimsuit" class="Outset" onclick="Click('Swimsuit', ['Suit','Sailor-uniform','Dress','Bodysuit','Hoodie','Bikini','Slut-suit','Sleepwear','Police','Nurse','Nun','Bunny-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
 <b>Swimsuit</b>
 <br><img src="PIC/Swimsuit.webp" alt="Swimsuit" width="300px;"><br>
 Regular one piece swimsuit.
 </div>
-<div data-return="Bodysuit" id="Bodysuit" class="Outset" onclick="Click('Bodysuit', ['Just-a-collar','Suit','Sailor-uniform','Dress','Swimsuit','None','Tentacle-suit','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<div data-return="Bunny-suit" id="Bunny-suit" class="Outset" onclick="Click('Bunny-suit', ['Suit','Sailor-uniform','Swimsuit','Bodysuit','Hoodie','Bikini','Slut-suit','Sleepwear','Police','Nurse','Nun'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
+<b>Bunny-suit</b>
+<br><img src="PIC/Bunny-suit.jpg" alt="Bunny-suit" width="300px;"><br>
+Long dress for parties, or concealed toys.
+</div>
+<div data-return="Bodysuit" id="Bodysuit" class="Outset" onclick="Click('Bodysuit', ['Suit','Sailor-uniform','Dress','Swimsuit','Hoodie','Bikini','Slut-suit','Sleepwear','Police','Nurse','Nun','Bunny-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
 <b>Bodysuit</b>
 <br><img src="PIC/Bodysuit.webp" alt="Bodysuit" width="300px;"><br>
 Nice and tight, just like it should be.
 </div>
-<div data-return="Tentacle-suit" id="Tentacle-suit" class="Outset" onclick="Click('Tentacle-suit', ['Just-a-collar','Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','None','Bikini','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<div data-return="Tentacle-suit" id="Tentacle-suit" class="Outset" onclick="Click('Tentacle-suit', [''], 0, [], [''], [''])">
 <b>Tentacle-suit</b>
 <br><img src="PIC/Tentacle-suit.jpg" alt="Tentacle-suit" width="300px;"><br>
-You choose the design we choose the tentacles.
+Choose another design to add tentacles to.
 </div>
-<div data-return="Bikini" id="Bikini" class="Outset" onclick="Click('Bikini', ['Just-a-collar','Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Tentacle-suit','None','Slut-suit'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<div data-return="Bikini" id="Bikini" class="Outset" onclick="Click('Bikini', ['Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Hoodie','Slut-suit','Sleepwear','Police','Nurse','Nun','Bunny-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
 <b>Bikini</b>
 <br><img src="PIC/Bikini.webp" alt="Bikini" width="300px;"><br>
 Just a normal bikini.
 </div>
-<div data-return="Slut-suit" id="Slut-suit" class="Outset" onclick="Click('Slut-suit', ['Just-a-collar','Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Tentacle-suit','None','Bikini'], 0, [0,0,0,0,0,0,0,0,0], [''], [''])">
+<div data-return="Slut-suit" id="Slut-suit" class="Outset" onclick="Click('Slut-suit', ['Suit','Sailor-uniform','Dress','Swimsuit','Bodysuit','Hoodie','Bikini','Sleepwear','Police','Nurse','Nun','Bunny-suit'], 0, [0,0,0,0,0,0,0,0], [''], [''])">
 <b>Slut-suit</b>
 <br><img src="PIC/Slut-suit.webp" alt="Slut-suit" width="300px;"><br>
 A suit for good little sluts.
 </div>
+
 </p></div>
+
+
+
+
 <div class="Body">
 <div id="end" class="Outset" onclick="End()"><p><b>Finish</b></p></div>
 </div>
